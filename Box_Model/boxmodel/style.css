@@ -1,0 +1,26 @@
+h1 {
+    background-color: #8a2be2;
+    width: 350px;
+    height: 100px;
+    padding: 10px 8px 20px 15px;
+    outline: 5px solid black;
+}
+
+
+
+
+
+h2 {
+    background-color: #90ee90;
+    width: 200px;
+    height: 80px;
+    padding: 10px 5px 0 15px;
+}
+
+
+
+
+
+p {
+    background-color: #ff000079;
+}

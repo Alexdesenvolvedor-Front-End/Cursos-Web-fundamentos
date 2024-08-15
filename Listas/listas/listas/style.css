@@ -1,0 +1,10 @@
+ul li {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+
+
+ol li{
+    list-style-type: upper-alpha;
+}

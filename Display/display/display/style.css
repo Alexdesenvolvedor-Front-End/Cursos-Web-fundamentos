@@ -1,0 +1,44 @@
+body {
+    background-color: #ccc;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+
+a {
+    background-color: #ffff00;
+    display: inline-block;
+    padding: 5px;
+
+}
+
+
+
+strong {
+    background-color: #ffa500;
+    height: 50px;
+    display: inline-block;
+
+}
+
+
+
+
+em {
+    background-color: #5af05a75;
+    visibility: hidden;
+
+    /* 
+A propriedade visibility: hidden; no CSS é usada para ocultar um elemento da página, mas de uma maneira que ainda reserva o espaço que ele ocuparia. Diferente da propriedade display: none;, que remove o elemento do fluxo do layout (fazendo com que ele não ocupe espaço algum na página), visibility: hidden; simplesmente torna o elemento invisível, mas ele continua ocupando o mesmo espaço na interface. */
+
+}

@@ -3,7 +3,22 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
+
+
+
+body {
+    background-color: #E8E7F9;
+}
+
+
+
+
+
+
+
+
 
 
 .hero {
@@ -18,17 +33,86 @@
 
 
 
+
+main {
+    width: 70%;
+    margin: auto;
+
+}
+
+
+
+
+
+article {
+    background-color: #fff;
+    margin: 30px;
+    padding: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.hero nav ul {
+    text-align: center;
+
+}
+
+
+
+.hero nav li {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 50px;
+    margin-top: 30px;
+
+
+
+}
+
+
+
+
+
+.hero nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+
+}
+
+
+
+
+
+
+.hero nav a:hover {
+    color: rgba(0, 0, 0, .5);
+}
+
+
+
+
 .container {
     width: 80%;
-    margin: 180px 30px 0 80px;
+    margin: 180px 30px 0 50px;
     text-align: center;
+
 }
 
 
 
 
 h1 {
-    font-size: 50px;
+    font-size: 55px;
     color: #fff;
     text-transform: uppercase;
     text-shadow: 2px 3px 0 black;
@@ -37,16 +121,14 @@ h1 {
 
 
 
-p {
-    padding-top: 30px;
-    background-color: white;
+.title {
+    background-color: rgba(0, 0, 0, .7);
+    /* Essa configuração faz com que o fundo do elemento seja preto (0, 0, 0), mas com 70% de opacidade. */
     display: inline-block;
-    margin: 20px;
+    color: #fff;
+    margin: 50px;
     padding: 15px;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid;
     border-radius: 3px;
- 
-
-
-
+    font-weight: 300;
 }

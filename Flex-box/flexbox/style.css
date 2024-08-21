@@ -1,16 +1,163 @@
 .flexbox {
-    height: 300px;
+    height: 250px;
     border: 2px solid blue;
     display: flex;
     flex-flow: row wrap;
+
+
 }
 
 
 
 .flexbox div {
     border: 2px solid orange;
-    width: 450px;
+    width: 180px;
     margin: 10px;
 
 
+}
+
+
+
+p {
+    text-transform: uppercase;
+}
+
+
+
+
+
+.flex-container1 {
+    flex-flow: row wrap;
+    margin-bottom: 20px;
+
+}
+
+
+
+
+.flex-container2 {
+    justify-content: flex-end;
+    margin-bottom: 20px;
+
+}
+
+
+
+
+
+
+.flex-container2 div {
+    width: 30px;
+}
+
+
+
+
+.flex-container3 {
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+
+
+
+
+
+
+
+.flex-container3 div {
+    width: 70px;
+    margin: 0;
+}
+
+
+
+
+
+.flex-container4 {
+    /* justify-content: center;
+    align-items: flex-end; */
+    align-content: stretch;
+    flex-flow: row wrap;
+
+}
+
+
+
+
+.flex-container4 div {
+    width: 150px;
+}
+
+
+
+
+
+.flex-container5 {
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    height: 250px;
+}
+
+
+
+.flex-container5 div {
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+.flex-container5 .div1 {
+    flex-basis: 130px;
+}
+
+
+
+
+.flex-container6 {
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+.flex-container6 div {
+    flex-basis: 100px;
+    background-color: orange;
+
+}
+
+
+
+.flex-container6 .div4 {
+    flex-grow: 1;
+
+}
+
+
+
+.flex-container7 div {
+    background-color: green;
+    font-size: 36px;
+    color: #fff;
+
+}
+
+
+.flex-container7 .div4 {
+    order: 2;
+}
+
+
+
+.flex-container7 .div3 {
+    order: 3;
 }

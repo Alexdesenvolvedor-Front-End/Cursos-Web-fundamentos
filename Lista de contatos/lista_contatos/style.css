@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+html,
+body {
+    height: 100%;
+    font-family: sans-serif;
+    background-color: #E3E2DE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+.listas {
+    background-color: #F0F2F5;
+    width: 500px;
+    height: 400px;
+    overflow-y: auto;
+    border-radius: 5px;
+    box-shadow: 2px 0 rgba(0.0.0.2);
+    margin-top: 15px;
+
+
+}
+
+
+
+
+
+
+
+
+.bloco {
+    display: flex;
+    border-bottom: 1px solid #E9E6DF;
+    padding: 20px;
+
+
+}
+
+
+
+
+
+.bloco__imagem>img {
+    width: 50%;
+    border-radius: 50%;
+}
+
+
+
+
+
+.bloco__contato {
+    flex-grow: 1;
+
+}
+
+
+
+
+
+.bloco__name {
+    font-size: 20px;
+    color: #41525d;
+    font-weight: 300;
+
+}
+
+
+
+
+
+.bloco__email {
+    color: #aaa;
+}
+
+
+
+
+
+
+.bloco__action {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    opacity: 0;
+    /* Efeito opacity */
+
+}
+
+
+
+
+
+
+
+ul:hover .bloco__action {
+    opacity: .2;
+    /* Efeito hover e opacity na ul e na class bloco__action*/
+}
+
+
+
+
+ul:hover {
+    background-color: #b6bdbf73;
+
+}
+
+
+
+
+
+
+
+
+ul {
+    list-style-type: none;
+
+
+}

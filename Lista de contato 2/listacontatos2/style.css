@@ -9,16 +9,15 @@
 
 
 
-
-
-
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: #E8F0FE;
+    background-color: #e8f0fe;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 30px;
+    /* Essa configuração foi feita no body para movimentar toda a minha lista de contatos */
 
 
 }
@@ -33,7 +32,7 @@ main {
     justify-content: center;
     gap: 18px;
     margin-top: 100px;
-
+    /* Essa configuração foi aplicada para centralizar a lista e na medida que a tela for ficando pequena os itens vão se adaptando. */
 
 }
 
@@ -52,9 +51,62 @@ ul {
 
 .bloco {
     width: 280px;
-    height: 200px;
+    height: 350px;
     border-radius: 5px;
     text-align: center;
-    box-shadow: 0 2px 7px rgba(0, 0, 0, .8);
-    background-color: rgba(0, 0, 255, 0.274);
+    background-image: url(../imagens/thumb06.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #E6E7F8;
+    /*Essa configuração foi aplicada para configurar todos os itens dentro da li*/
+
+}
+
+
+
+
+.bloco__imagem img {
+    border-radius: 50%;
+    width: 80px;
+    margin-top: 120px;
+    /* Essa configuração foi aplicada em toda minha imagem */
+
+}
+
+
+
+
+
+.bloco__action {
+    margin-top: 50px;
+    background-color: #B6BDBF;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    gap: 50px;
+    /* Essa configuração foi aplicada em todo meu container onde estão as imagens delete e edit  */
+
+
+
+}
+
+
+
+
+
+
+.bloco__name {
+    font-size: 20px;
+    color: #385555;
+    /* Configuração aplicada no name */
+}
+
+
+
+
+
+.bloco__email {
+    font-size: 15px;
+    margin-top: 8px;
+    /* Configuração aplicada no e-mail */
 }

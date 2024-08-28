@@ -16,6 +16,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    /* Essas configurações colocou o titulo h1 em coluna com o container e centralizou lado a lado os blocos */
 }
 
 
@@ -32,6 +33,7 @@ body {
     border-radius: 5px;
     box-shadow: 2px 0 rgba(0.0.0.2);
     margin-top: 15px;
+    /* Configuração aplicada em todo o bloco main */
 
 
 }
@@ -47,6 +49,7 @@ body {
     display: flex;
     border-bottom: 1px solid #E9E6DF;
     padding: 20px;
+    /* Configuração aplicada nas li */
 
 
 }
@@ -58,6 +61,7 @@ body {
 .bloco__imagem>img {
     width: 50%;
     border-radius: 50%;
+    /* Configuração aplicada nas imagens dos perfis */
 }
 
 
@@ -66,6 +70,7 @@ body {
 
 .bloco__contato {
     flex-grow: 1;
+    /* configuração aplicada para o crescimento do bloco onde está o contato */
 
 }
 
@@ -77,6 +82,7 @@ body {
     font-size: 20px;
     color: #41525d;
     font-weight: 300;
+    /* Configuração aplicada no name */
 
 }
 
@@ -86,6 +92,7 @@ body {
 
 .bloco__email {
     color: #aaa;
+    /* Configuração aplicada no e-mail */
 }
 
 
@@ -98,6 +105,7 @@ body {
     gap: 10px;
     align-items: center;
     opacity: 0;
+    /* Configuração aplicada nas imagens delete e edit */
     /* Efeito opacity */
 
 }
@@ -118,7 +126,7 @@ ul:hover .bloco__action {
 
 ul:hover {
     background-color: #b6bdbf73;
-
+    /* Configuração aplicada na ul */
 }
 
 

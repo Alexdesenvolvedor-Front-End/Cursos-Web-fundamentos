@@ -6,7 +6,7 @@
 
 
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: open sans-serif;
     background-color: #320972;
     width: 90%;
     max-width: 960px;
@@ -16,7 +16,7 @@ body {
 
 
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     margin-top: 35px;
@@ -25,30 +25,104 @@ body {
 
 
 
-.header__nav ul{
+.header__nav ul {
     display: flex;
     gap: 60px;
-    
-   
+
+
 }
 
 
 
-.header__nav li{
+.header__nav li {
     list-style-type: none;
- 
+
 }
 
 
 
 
 
-.header__nav a{
+.header__nav a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-radius: 6px;
     color: #ffff;
- 
-   
+
+
+}
+
+
+
+
+
+.header__nav a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+a.header__nav--active {
+    /* Essa configuração a tag (a) fica como descendente da minha class header__nav--active, dessa forma a cor é aplicada no botão Plan, isso a relativo a especificidade.*/
+    background-color: #ffff;
+    color: #0c1014;
+    padding: 15px;
+    pointer-events: none;
+    /* Essa configuração diz para o browse que este elemento não vai receber o evento de clique do mouse mesmo sendo um link   */
+
+
+
+}
+
+
+
+
+.title {
+    font-family: "Bebas Neue", sans-serif;
+    background-image: linear-gradient(to right, #46296A, #ffff, #286090);
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 58px;
+}
+
+
+
+
+.sub {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #ffff;
+
+}
+
+
+
+
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+
+
+}
+
+
+
+
+
+.cards__plan {
+    background-color: #ffff;
+    padding: 100px 50px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px -9px #ffff;
 }
 
 
@@ -57,5 +131,67 @@ body {
 
 
 
+.cards-plan__title {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
+    color: #310972d8;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-bottom: 1px solid #53C3EB;
+    padding-bottom: 1px;
+    letter-spacing: 2px;
 
 
+}
+
+
+
+
+
+.cards__plan-price {
+    font-size: 35px;
+    display: inline-block;
+    margin-top: 20px;
+
+}
+
+
+
+
+.cards-plan__features {
+    margin-top: 10px;
+    line-height: 1.5;
+    padding-left: 15px;
+}
+
+
+
+
+
+.cards-plan__cta {
+    display: inline-block;
+    margin-top: 30px;
+    background-color: #53C3EB;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    font-weight: normal;
+    border-radius: 20px;
+    color: #ffff;
+    text-decoration: none;
+}
+
+
+
+
+.cards-plan__features li::marker {
+    /* A configuração .cards-plan__features li::marker que você forneceu é uma regra de CSS que estiliza o marcador (bullet point) de uma lista não ordenada (<ul>). */
+    color: #53c3eb;
+}
+
+
+
+
+
+.cards-plan__cta:hover{
+    background-color: #0C9ABE;
+}

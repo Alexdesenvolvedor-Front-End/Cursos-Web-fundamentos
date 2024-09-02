@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+
+}
+
+
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 5rem;
+    color: lightseagreen
+
+}
+
+
+
+p {
+    font-size: 3rem;
+    margin-top: 5rem;
+}

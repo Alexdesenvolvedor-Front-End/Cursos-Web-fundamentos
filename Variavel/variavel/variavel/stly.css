@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    --header-height: 15rem;
+    /* variavel altura */
+    --main-height: 70rem;
+    /* variavel altura */
+    --header-color: red;
+    /* variavel color */
+    --main-color: blue;
+    /* variavel color */
+}
+
+
+
+html {
+    font-size: 62.5%;
+}
+
+
+
+h1 {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+
+header {
+    width: 100%;
+    background-color: var(--header-color);
+    height: var(--header-height);
+    font-size: 3rem;
+    top: 0;
+    text-transform: uppercase;
+
+}
+
+
+
+main {
+    min-height: var(--main-height);
+    background-color: var(--main-color);
+    font-size: 3rem;
+    text-transform: uppercase;
+}

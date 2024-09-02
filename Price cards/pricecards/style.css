@@ -8,9 +8,9 @@
 body {
     font-family: open sans-serif;
     background-color: #320972;
-    width: 90%;
     max-width: 960px;
     margin: auto;
+
 
 }
 
@@ -57,6 +57,9 @@ body {
 
 
 
+
+
+
 .header__nav a:hover {
     text-decoration: underline;
 }
@@ -64,8 +67,12 @@ body {
 
 
 
+
+
+
+
 a.header__nav--active {
-    /* Essa configuração a tag (a) fica como descendente da minha class header__nav--active, dessa forma a cor é aplicada no botão Plan, isso a relativo a especificidade.*/
+    /* Essa configuração a tag (a) fica como descendente da minha class header__nav--active, dessa forma a cor é aplicada no botão Plan, isso é relativo a especificidade.*/
     background-color: #ffff;
     color: #0c1014;
     padding: 15px;
@@ -108,8 +115,11 @@ a.header__nav--active {
 
 .cards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 80px;
+    gap: 10px;
+
 
 
 }
@@ -123,6 +133,10 @@ a.header__nav--active {
     padding: 100px 50px;
     border-radius: 10px;
     box-shadow: 0 6px 15px -9px #ffff;
+    /* Define o deslocamento horizontal da sombra. Neste caso, 0 significa que a sombra não se desloca para a esquerda ou para a direita.
+    Aqui, 6px indica que a sombra será deslocada para baixo por 6 pixels.
+    Aqui, 15px indica que a sombra será suavemente desfocada. Quanto maior o valor, mais suave e espalhada será a sombra.
+    Aqui um valor negativo como -9px fará com que a sombra seja "puxada" para dentro, tornando-a menor. */
 }
 
 
@@ -152,6 +166,8 @@ a.header__nav--active {
     font-size: 35px;
     display: inline-block;
     margin-top: 20px;
+    /* Aqui epliquei um display: inline-block para da uma margin no meu elemento */
+
 
 }
 
@@ -184,7 +200,7 @@ a.header__nav--active {
 
 
 .cards-plan__features li::marker {
-    /* A configuração .cards-plan__features li::marker que você forneceu é uma regra de CSS que estiliza o marcador (bullet point) de uma lista não ordenada (<ul>). */
+    /* A configuração .cards-plan__features li::marker fornecida é uma regra de CSS que estiliza o marcador (bullet point) de uma lista não ordenada (<ul>). */
     color: #53c3eb;
 }
 

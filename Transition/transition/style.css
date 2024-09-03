@@ -1,0 +1,29 @@
+div {
+    width: 300px;
+    height: 300px;
+    background-color: greenyellow;
+    margin: 100px;
+    transition-property: width, height, background-color;
+    /* Essa configuração define uma transição na largura, na altura, e no background-color */
+    transition-duration: .5s, 1s;
+    /* Essa configuração define a duração das transições de propriedade para um elemento ou seja quanto tempo cada transição levará para ser completada */
+    transition-timing-function: cubic-bezier(059, -0.3, .49, 1.36);
+    transition-delay: 0s, .9s;
+    /* Essa configuração define o tempo de atraso antes que uma transição começe*/
+    box-shadow: 2px 2px 10px rgba(0, 0, 255, 0.479);
+
+    transition: width .5s ease, height 1s ease .3s background-color .5s ease;
+    /* Esse é um atalho da propriedade transição */
+
+
+}
+
+
+
+
+
+div:hover {
+    width: 200px;
+    height: 150px;
+    background-color: red;
+}

@@ -31,7 +31,7 @@ h1 {
 
 
 
-p{
+p {
     font-size: 2rem;
     text-align: center;
 }
@@ -84,7 +84,7 @@ footer {
 
 
 
-.container__box{
+.container__box {
     width: 300px;
     height: 200px;
     margin: auto;
@@ -92,11 +92,14 @@ footer {
     margin-bottom: 5rem;
     background-color: yellow;
     outline: 4px solid red;
+    /* Essa configuração define desenhar um contorno ao redo do elemento */
     outline-offset: 16px;
+    /* Essa configuração define a distância entre uma borda de contorno no elemento ao qual está sendo aplicada */
 }
 
 
 
-.container__box:hover{
+.container__box:hover {
     outline-width: 10px;
+    /* Essa configuração define a espessura da largura de um contorno autline ao redor de um elemento */
 }

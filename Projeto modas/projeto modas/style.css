@@ -20,72 +20,126 @@ html {
     --cor-fundo-box: #003d52;
     --cor-fundo-footer: #0b171f;
     --cor-texto-footer: #6f8567;
+    --cor-nome-imagem: #555252fb;
+    --cor-hover-link: #ffff;
+
+
 
 }
+
 
 
 
 body {
     font-family: "Roboto", sans-serif;
-}
-
-
-
-header {
-    display: flex;
-    justify-content: space-around;
-    background-color: var(--background-top-header);
-    padding: 1.5em;
 
 }
 
-
-
-
-
-
-
-
-
-ul {
-    display: flex;
-    list-style-type: none;
-    gap: 20px
-}
-
-
-
-ul li a {
-    display: block;
-    font-size: 16px;
-    text-decoration: none;
-    letter-spacing: 1px;
-    color: var(--texto-link);
-    margin-top: .5em;
-}
-
-
-
-a:hover {
-    color: #ffff;
-}
 
 
 
 
 .topo {
-    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-image: url(../imagens/topo.jpg);
+    background-size: cover;
+    height: 800px;
 }
 
 
-h1 {
-    font-family: "Federo", sans-serif;
-    font-size: 30px;
+
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-top: 5em;
+    gap: 5em;
+}
+
+
+
+
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: var(--texto-link);
+    text-transform: capitalize;
+}
+
+
+
+
+
+nav ul li a:hover {
+    color: var(--cor-hover-link);
+}
+
+
+
+
+header h1 {
+    font-family: "Belleza", sans-serif;
+    margin-top: 1.5em;
+    font-size: 2.8em;
+    text-transform: uppercase;
     color: var(--texto-menu);
 }
 
 
 
-h2 {
-    font-family: "Federo", sans-serif;
+
+.principal h2 {
+    text-align: center;
+    font-family: "Belleza", sans-serif;
+    font-size: 2.5em;
+    color: var(--cor-texto);
+}
+
+
+
+
+
+.principal p {
+    margin-top: 3em;
+    font-size: 1.3em;
+    line-height: 1.6em;
+    letter-spacing: 1px;
+    text-indent: 3em;
+}
+
+
+
+
+.principal__sessao article p {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 1.5em;
+    color: var(--cor-nome-imagem);
+    font-weight: bold;
+}
+
+
+
+
+
+.principal {
+    display: inline-block;
+    width: 50%;
+    margin-left: 45em;
+    margin-top: 3.5em;
+}
+
+
+
+
+
+.principal__sessao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.5em;
+    gap: 1em;
+
 }

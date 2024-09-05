@@ -22,6 +22,8 @@ html {
     --cor-texto-footer: #6f8567;
     --cor-nome-imagem: #555252fb;
     --cor-hover-link: #ffff;
+    --color-box: #B6B6B6;
+    --color-texto: #ffff;
 
 
 
@@ -93,8 +95,48 @@ header h1 {
 .principal h2 {
     text-align: center;
     font-family: "Belleza", sans-serif;
-    font-size: 2.5em;
+    font-size: 3em;
     color: var(--cor-texto);
+}
+
+
+
+
+
+.about h2 {
+    font-family: "Belleza", sans-serif;
+    font-size: 4em;
+    padding: 2em;
+    color: #B6B6B6;
+    text-transform: uppercase;
+    font-weight: 300;
+
+}
+
+
+
+
+
+.texto {
+    display: inline-block;
+    width: 68%;
+
+}
+
+
+
+
+.texto p {
+    margin-left: 6em;
+    font-size: 1.3em;
+    line-height: 1.6em;
+    letter-spacing: 1.5px;
+    color: #ffff;
+    text-align: justify;
+    font-weight: 300;
+
+
+
 }
 
 
@@ -106,7 +148,8 @@ header h1 {
     font-size: 1.3em;
     line-height: 1.6em;
     letter-spacing: 1px;
-    text-indent: 3em;
+    font-weight: 300;
+    align-items: justify;
 }
 
 
@@ -128,7 +171,7 @@ header h1 {
     display: inline-block;
     width: 50%;
     margin-left: 45em;
-    margin-top: 3.5em;
+    margin-top: 10em;
 }
 
 
@@ -141,5 +184,35 @@ header h1 {
     align-items: center;
     margin-top: 3.5em;
     gap: 1em;
+
+}
+
+
+
+
+
+
+.about {
+    background-image: url(../imagens/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    height: 600px;
+    background-color: var(--cor-fundo-box);
+    margin-top: 10em;
+
+
+}
+
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 1.5em;
+    background-color: var(--cor-fundo-footer);
+    color: var(--cor-texto-footer);
+    font-size: 1.2em;
+    font-weight: 300;
 
 }

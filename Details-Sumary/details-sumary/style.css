@@ -1,0 +1,22 @@
+details {
+    color: blue;
+    background-color: rgba(250, 206, 206, 0.418);
+    margin-bottom: 1em;
+    padding: 1em;
+
+}
+
+
+
+
+details summary {
+    cursor: pointer;
+}
+
+
+
+
+details[open] {
+    /* Essa configuração define que quando o details estiver aberto mostrara o background-color: yellow */
+    background-color: yellow;
+}

@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+html {
+    background-color: #D1D7DC;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100%;
+}
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+
+}
+
+
+
+
+h1 {
+    text-align: center;
+    font-weight: 400;
+
+
+}
+
+
+
+
+
+
+form {
+    width: 350px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #333;
+    margin-top: 1em;
+    padding: 1em;
+
+
+}
+
+
+
+fieldset {
+    border: none;
+
+}
+
+
+
+
+legend {
+    padding: 1em;
+    text-align: center;
+    font-weight: bold;
+    color: #454e4f;
+    font-size: 1.2em;
+}
+
+
+
+
+label {
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+input {
+    padding: .5em;
+    border-radius: 5px;
+    border: 1px solid #bbb;
+
+
+}
+
+
+
+
+
+
+
+input,
+label {
+    display: flex;
+    margin-bottom: .5em;
+    width: 100%;
+
+
+}
+
+
+
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+
+}
+
+
+
+
+.btn2 {
+    width: fit-content;
+    /* Essa configuração é usada para ajustar a largura de um elemento de acordo com o conteúdo interno dele */
+    background-color: #7c7e80;
+    padding: .8em 4em;
+    margin-top: 1em;
+    color: white;
+    cursor: pointer;
+
+}
+
+
+
+
+.btn2--reset {
+    background-color: red;
+}

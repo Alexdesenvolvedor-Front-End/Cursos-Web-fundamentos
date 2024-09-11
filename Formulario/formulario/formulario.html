@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="descrição da minha página">
+    <meta name="author" content="Alex Rodrigues Vitorino">
+    <meta name="Keywords" content="HTML5, CSS3, JavaScript">
+    <link rel="stylesheet" href="../formulario/style.css">
+    <title>Formulários</title>
+</head>
+
+<body>
+
+    <h1>Formulário de busca</h1>
+
+    <form action="https://www.google.com.br/search" method="get">
+        <legend>Tela de exemplo formulário</legend> <!-- Titulo do formulario -->
+       
+        <filedset>
+            <label for="busca">Faça uma busca</label>
+            <!-- Esse label for ele vai criar um vinculo com o id e com a busca -->
+            <input type="text" name="q" id="busca"> <!-- Nome do meu input que o servidor vai ter acesso -->
+            <input type="submit" value="Enviar">
+        </filedset>
+
+    </form>
+</body>
+
+</html>

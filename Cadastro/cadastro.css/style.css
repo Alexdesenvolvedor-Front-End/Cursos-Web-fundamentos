@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    --html-color: #F4522C;
+    --btn-color: #f4512c9d;
+    --fieldset-color: #ffffff;
+}
+
+
+
+
+
+html {
+    background-color: var(--html-color);
+    font-family: "Roboto Flex", sans-serif;
+}
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+
+
+
+form {
+    width: 35%;
+    min-width: 28.125em;
+    max-width: 35em;
+ 
+    
+  
+}
+
+
+
+fieldset{
+    background-color: var(--fieldset-color);
+    border: none;
+   
+   
+
+  
+}
+
+
+
+
+
+

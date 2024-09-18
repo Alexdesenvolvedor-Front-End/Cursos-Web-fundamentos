@@ -6,6 +6,10 @@
     <meta name="description" content="descrição da minha página">
     <meta name="author" content="Alex Rodrigues Vitorino">
     <meta name="keywords" content="HTML5, CSS3, JavaScript">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../cadastro.css/style.css">
     <title>Cadastro</title>
 </head>
@@ -19,12 +23,19 @@
             <input type="text" name="name" id="name" required placeholder="Digite seu nome completo">
 
             <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" required placeholder="Digite um e-mail vallido">
+            <input type="email" name="email" id="email" required placeholder="Digite um e-mail valido">
 
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" required max="8">
 
-            <button>Cadastre-se</button>
+
+            <div class="action">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required max="8">
+
+                <p>Já possui cadastro?<a href="#">Faça login</a></p>
+                <button>Cadastre-se</button>
+            </div>
+
+
         </fieldset>
     </form>
 </body>

@@ -10,29 +10,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../cadastro.css/style.css">
+    <link rel="stylesheet" href="login.css/style.css">
     <title>Cadastro</title>
 </head>
 
 <body>
-    <form action="login" method="post">
+
+    <form action="login" method="post" autocomplete="off">
         <fieldset>
-            <legend>Cadastre-se</legend>
+            <legend>Login</legend>
 
             <label for="user">User</label>
-            <input type="text" name="name" id="name" required placeholder="Digite seu nome completo">
+            <input type="user" name="user" id="user" required placeholder="Digite seu usuário">
 
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" required placeholder="Digite um e-mail valido">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required max="8">
 
 
+            <div class="action action--2">
+                <button class="btn-primary">login</button>
+                <a href="cadastro.html" class="link1">cadastre-se</a>
+                <a href="#" class="link2">Esqueci minha senha</a>
 
-            <div class="action">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" required max="8">
-
-                <p>Já possui cadastro?<a href="#">Faça login</a></p>
-                <button>Cadastre-se</button>
             </div>
 
 

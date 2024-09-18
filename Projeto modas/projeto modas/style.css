@@ -135,9 +135,6 @@ header h1 {
     text-align: justify;
     font-weight: 300;
 
-
-
-
 }
 
 
@@ -171,7 +168,7 @@ header h1 {
 .principal {
     display: inline-block;
     width: 50%;
-    margin-left: 45em;
+    margin-left: 39em;
     margin-top: 10em;
 }
 

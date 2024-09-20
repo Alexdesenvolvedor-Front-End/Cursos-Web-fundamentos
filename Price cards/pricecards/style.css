@@ -88,7 +88,7 @@ a.header__nav--active {
 
 .title {
     font-family: "Bebas Neue", sans-serif;
-    background-image: linear-gradient(to right, #46296A, #ffff, #286090);
+    background-image: linear-gradient(to right, #46296A, #ffffff, #286090);
     background-clip: text;
     color: transparent;
     text-align: center;

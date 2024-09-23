@@ -1,0 +1,53 @@
+article {
+    outline: 4px solid green;
+}
+
+
+article a {
+    color: red;
+    /* Seletor descendente, 
+A configuração article a { color: red; } é uma regra CSS que define a cor do texto de todos os links (<a>) dentro de elementos <article> para vermelho. */
+}
+
+
+
+
+article a>b {
+    color: green;
+    /* Filho direto,
+A configuração article a > b { color: green; } é uma regra CSS que altera a cor do texto de elementos <b> (ou qualquer outro elemento que você tenha em mente) que são filhos diretos de um link (<a>) dentro de um elemento <article>. */
+}
+
+
+
+
+
+h3+p {
+    background-color: yellow;
+    /* Primeiro irmão adjacente, A configuração h3 + p { background-color: yellow; } é uma regra de CSS que aplica um fundo amarelo ao elemento <p> que imediatamente segue um elemento <h3>. h3 + p: O seletor + é um seletor de irmãos adjacentes, que seleciona o primeiro <p> que aparece logo após um <h3>.
+{ background-color: yellow; }: Esta parte define o estilo que será aplicado, ou seja, o fundo do <p> será amarelo.
+*/
+}
+
+
+
+
+hr~p {
+    border: 4px dashed orange;
+    /* hr ~ p: Este seletor CSS usa o combinador de irmãos gerais (~). Ele seleciona todos os elementos <p> que são irmãos de um elemento <hr>, ou seja, que aparecem após o <hr> no mesmo nível de hierarquia no DOM. */
+}
+
+
+
+.destaque {
+    padding-left: 10em;
+}
+
+
+
+p:not(.destaque) {
+    background-color: #aeadad;
+    /* p: Seleciona todos os elementos de parágrafo (<p>).
+:not(.destaque): Aplica a regra apenas aos parágrafos que não possuem a classe destaque.
+background-color: #aeadad;: Define a cor de fundo desses parágrafos como um tom de cinza claro. */
+}

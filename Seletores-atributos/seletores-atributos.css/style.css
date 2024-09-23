@@ -1,0 +1,27 @@
+a[href="#"] {
+    opacity: .2;
+    /* Seletor atributo href #
+A configuração a[href="#"] { opacity: .2; } serve para tornar os links que apontam para # (geralmente usados como âncoras ou placeholders) visualmente menos destacados, reduzindo sua opacidade a 20%. Isso pode ser útil em várias situações: */
+}
+
+
+
+a[href^="http"] {
+    color: red;
+    /* Seletro atributos de links
+A configuração a[href^="http"] no CSS é um seletor que aplica estilos a todos os links (<a>) que começam com "http". Isso significa que todos os links que apontam para URLs externas (como http:// ou https://) terão a cor do texto definida como vermelha. */
+
+}
+
+
+
+a[href$=".pdf"] {
+    color: orange;
+    /* Seletor atributo para pdf Essa configuração é uma regra de CSS que altera a cor do texto de todos os links (elementos <a>) que terminam com a extensão .pdf.Qual  */
+}
+
+
+a[target="_blank"] {
+    text-decoration: none;
+    /* Essa configuração define em tirar o sublinhado de links que abrem  em uma nova aba ou janela */
+}

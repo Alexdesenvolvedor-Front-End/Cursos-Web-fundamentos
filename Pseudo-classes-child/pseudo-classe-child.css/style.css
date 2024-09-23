@@ -1,0 +1,53 @@
+div :first-child {
+    color: yellowgreen;
+    /* Essa configuração define em selecionar uma cor no primerio elemento filho dentro de uma div */
+}
+
+
+p:last-child {
+    color: orange;
+    /* Essa configuração define em selecionar uma cor no ultimo filho que é o paragrafo */
+}
+
+
+
+p:nth-child(1) {
+    background-color: rgba(166, 166, 233, 0.452);
+    /* Essa configuração define seliecionar uma background-color  azul se o primeiro filho for um paragrafo */
+}
+
+
+
+
+h3:first-of-type {
+    background-color: blueviolet;
+    /* Essa configuração define em selecionar uma cor no primeira tag do tipo h3 */
+}
+
+
+
+
+h3:last-of-type {
+    color: grey;
+    /* Essa configuração define em selecionar uma cor na ultima tag do tipo h3 */
+}
+
+
+
+a:nth-of-type(1) {
+    text-decoration: none;
+    /* Essa configuração define em tirar o sublinhado do primeiro elemento como tag a  */
+}
+
+
+li:nth-child(odd) {
+    background-color: red;
+    /* Essa configuração seleciona uma cor vermelha somente nas li que forem número impares. Se estivesse com a configuração li:nth-child-(even) iria selecionar uma cor nas li somente nas que forem número pares */
+}
+
+
+
+/* li:nth-child(3n){
+    background-color: aqua;
+    /* 
+A configuração li:nth-child(3n) em CSS aplica um estilo específico a elementos <li> que são o terceiro filho (ou múltiplos de três) dentro de um elemento pai. */

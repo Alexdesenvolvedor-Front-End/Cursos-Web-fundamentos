@@ -1,0 +1,33 @@
+p::before {
+    content: "ANTES";
+}
+
+
+
+P::after {
+    content: "DEPOIS";
+}
+
+
+
+
+
+div {
+    border: 2px solid red;
+    padding: 3em;
+    position: relative;
+}
+
+
+
+
+div::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: green;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

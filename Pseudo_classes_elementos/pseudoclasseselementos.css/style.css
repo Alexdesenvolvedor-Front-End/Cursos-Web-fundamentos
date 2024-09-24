@@ -1,0 +1,89 @@
+button {
+    background-color: #a09b9b;
+    color: white;
+    outline: none;
+    padding: .5em;
+    margin-top: .5em;
+    border-radius: 5px;
+}
+
+
+
+button:disabled {
+    opacity: .5;
+}
+
+
+p:empty::before {
+    content: "paragrafo vazio???"
+}
+
+
+a:focus,
+a:hover {
+    background-color: orange;
+}
+
+
+
+
+
+
+input[type="text"]:read-only {
+    background-color: yellow;
+}
+
+
+
+
+
+input[type="text"]:disabled {
+    background-color: rgba(255, 0, 0, 0.178);
+}
+
+
+
+
+input[type="text"]::placeholder {
+    color: #b43d3d;
+
+}
+
+
+
+
+input[type="text"]:placeholder-shown {
+    background-color: aqua;
+}
+
+
+
+
+
+
+input[type="text"] {
+    background-color: #999;
+    border: none;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+.paragrafo::first-letter {
+    font-size: 3em;
+    float: left;
+    margin-right: .2em;
+    line-height: 1;
+    color: red;
+}
+
+
+
+
+.paragrafo::first-line {
+    color: blue;
+}

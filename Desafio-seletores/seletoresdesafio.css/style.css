@@ -1,2 +1,59 @@
+body {
+    background-color: #ddd;
+}
+
+a[target="_blank"]::after {
+    content: url(../imagens/newWindow-icon.png);
+    margin-left: .5em;
+    /* Essa configuração define em por uma imagem após um link externo (uma nova aba)  */
+}
 
 
+a {
+    margin-bottom: .1em;
+    display: block;
+}
+
+
+
+a[href$=".pdf"]::before {
+    content: url(../imagens/pdf-icon.gif);
+    margin-right: .5em;
+    /* Essa configuração define em por uma imagem em pdf antes do download */
+}
+
+
+
+input[type="checkbox"]:checked+label {
+    color: green;
+    /* Essa configuração CSS altera a cor do texto de um elemento <label> que está associado a um checkbox quando ele está marcado (checked). */
+
+}
+
+
+
+
+
+input[type="checkbox"]:not(:disabled)+label {
+    color: red;
+    /* 
+Essa configuração CSS aplica um estilo específico a um elemento <label> que está imediatamente após um elemento <input> do tipo checkbox, desde que esse checkbox não esteja desabilitado (:not(:disabled)). */
+
+}
+
+
+
+input[type="checkbox"]:disabled+label {
+    color: blue;
+    /* Essa configuração em CSS aplica um estilo específico a um elemento <label> que está associado a um <input> do tipo checkbox que está desabilitado (disabled). */
+}
+
+
+
+li li:nth-child(3) {
+    background-color: yellow;
+    /* A configuração li:nth-child(3) { background-color: yellow; } é uma regra de CSS que aplica um estilo específico ao terceiro elemento li (item de lista) dentro de um contêiner, como uma lista ordenada (<ol>) ou não ordenada (<ul>). li: Seletor que se refere a elementos de lista.
+
+    :nth-child(3): Pseudo-classe que seleciona o terceiro filho do seu pai. Isso significa que ela afetará apenas o terceiro item da lista.
+background-color: yellow;: Define a cor de fundo do terceiro item da lista como amarelo. */
+}

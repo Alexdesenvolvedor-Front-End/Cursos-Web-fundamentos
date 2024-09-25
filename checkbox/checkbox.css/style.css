@@ -1,0 +1,99 @@
+.chk1 {
+    display: none;
+
+
+
+}
+
+.chk1+label span {
+    display: inline-block;
+    font-size: 26px;
+    width: 1em;
+    height: 1em;
+    background-color: red;
+
+}
+
+
+
+
+.chk1:checked+label span {
+    background-color: blue;
+    position: relative;
+
+
+
+}
+
+
+
+.chk1:checked+label span::before {
+    content: "";
+    /* content: "": Isso cria um conteúdo vazio que pode ser estilizado, permitindo que o pseudo-elemento ::before tenha um efeito visual. */
+    display: block;
+    /* display: block: Define o pseudo-elemento como um bloco, o que significa que ele ocupará toda a largura disponível. */
+    position: absolute;
+    /* position: absolute: O pseudo-elemento é posicionado em relação ao seu elemento pai mais próximo que tiver position: relative. Isso permite controle preciso sobre sua posição. */
+    border: 2px solid white;
+    /* border: 2px solid white: Aplica uma borda branca de 2 pixels ao redor do pseudo-elemento. */
+    top: 2px;
+    /* top, left, right, bottom: Essas propriedades definem o espaço interno do pseudo-elemento, ajustando onde ele se posiciona dentro do seu contêiner. */
+    left: 10px;
+    right: 8px;
+    bottom: 8px;
+    transform: rotate(45deg);
+    /* transform: rotate(45deg): Rotaciona o pseudo-elemento em 45 graus, o que geralmente é usado para criar um efeito de "marca de seleção" (checkmark). */
+    border-left-color: transparent;
+    border-top-color: transparent;
+    /* border-left-color: transparent e border-top-color: transparent: Isso cria um triângulo, removendo a cor da borda esquerda e superior, permitindo que a borda inferior e direita formem um "V", que é uma forma comum para indicar que algo está selecionado. */
+
+
+}
+
+
+/* .chk2{
+    display: none;
+}
+ */
+
+
+.chk2+label span{
+    display: inline-block;
+    font-size: 30px;
+    width: 2em;
+    height: 2em;
+    background-color: aqua;
+}
+
+
+
+
+.chk2:checked+label span{
+    background-color: blueviolet;
+    position: relative;
+}
+
+
+
+
+.chk2:checked+label span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 2px solid rgba(0, 0, 255, 0.767);
+    top: 5px;
+    left: 10px;
+    right: 12px;
+    bottom: 8px;
+    /* transform: rotate(45deg); */
+    /* border-left-color: transparent;
+    border-top-color: transparent; */
+
+}
+
+
+
+
+
+
+

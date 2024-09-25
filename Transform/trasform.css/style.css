@@ -1,0 +1,112 @@
+body {
+    margin-bottom: 100vh;
+    background-color: #ccc;
+}
+
+
+
+
+
+
+
+
+.div1 {
+    outline: 1px solid #999;
+    width: 200px;
+    margin: .5em auto;
+}
+
+
+
+
+p {
+    width: 50%;
+}
+
+
+
+.destaque {
+    background-color: yellow;
+}
+
+
+
+.div1 .destaque {
+    transform: translatex(90%);
+    /* Essa configuração define o elemento no eixo horizontal */
+
+}
+
+
+
+
+
+
+.div2 {
+    outline: 1px solid #999;
+    width: 200px;
+    margin: .5em auto;
+}
+
+
+
+
+
+
+.div2 .destaque1 {
+    width: 50%;
+    background-color: red;
+}
+
+
+
+
+.div2 .destaque1 {
+    transform: translatey(-50%);
+    /* Essa configuração define o elemento no eixo vertical */
+}
+
+
+
+
+.div3 {
+    outline: 1px solid #999;
+    width: 200px;
+    margin: .5em auto;
+}
+
+
+
+
+
+
+
+.div3 .destaque2 {
+    width: 50%;
+    background-color: orange;
+    transform: scale(2);
+    /* Essa configuração define o tamanho do elemento no eixo x e y, se colocar .2 .3 ele reduz o tamanho*/
+}
+
+
+
+
+
+
+.div4 {
+    outline: 1px solid #999;
+    width: 200px;
+    margin: .5em auto;
+}
+
+
+
+
+
+
+.div4 .destaque3 {
+    width: 50%;
+    background-color: purple;
+    transform: skewX(15deg);
+    /* Essa configuração define distorcer o elemento no eixo horizontal */
+}

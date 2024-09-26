@@ -1,9 +1,27 @@
-.chk1 {
-    display: none;
-
-
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+
+
+body {
+    background-color: #9999;
+    margin: 1em;
+  
+}
+
+
+
+.chk1 {
+ 
+}
+
+
+
+
+
 
 .chk1+label span {
     display: inline-block;
@@ -51,49 +69,52 @@
 }
 
 
-/* .chk2{
-    display: none;
-}
- */
 
-
-.chk2+label span{
+.chk2 span {
     display: inline-block;
-    font-size: 30px;
-    width: 2em;
-    height: 2em;
+    /* display: inline-block;: Isso faz com que os <span> se comportem como elementos de bloco, permitindo que você defina largura e altura. Eles ainda se alinham em linha, mas podem ter suas dimensões controladas. */
+    font-size: 25px;
+    /* font-size: 25px;: Define o tamanho da fonte para 25 pixels. Isso afetará o texto dentro do <span>. */
+    width: 1em;
+    /* Define a largura do checkbox */
+    height: 1em;
+    /* Define a altura do checkbox */
     background-color: aqua;
+
 }
 
 
 
 
-.chk2:checked+label span{
-    background-color: blueviolet;
+
+
+                                
+
+
+
+.chk2 input[type="checkbox"]:checked+span {
+    /* input[type="checkbox"]:checked: Este seletor específico seleciona checkboxes que estão marcados (ou seja, a opção está selecionada). */
+    background-color: orange;
     position: relative;
+    /* position: relative;: Essa propriedade altera o contexto de posicionamento do span, permitindo que você use propriedades de posicionamento (como top, left, etc.) em relação à sua posição original. */
+
+
 }
 
 
 
 
-.chk2:checked+label span::before {
+
+.chk2 input[type="checkbox"]:checked+span::before {
     content: "";
-    display: block;
     position: absolute;
-    border: 2px solid rgba(0, 0, 255, 0.767);
-    top: 5px;
-    left: 10px;
-    right: 12px;
-    bottom: 8px;
-    /* transform: rotate(45deg); */
-    /* border-left-color: transparent;
-    border-top-color: transparent; */
-
+    border: 2px solid white;
+    top: 0;
+    left: 8px;
+    right: 8px;
+    bottom: 6px;
+    transform: rotate(45deg);
+    border-left-color: transparent;
+    border-top-color: transparent;
+   
 }
-
-
-
-
-
-
-

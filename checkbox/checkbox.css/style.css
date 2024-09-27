@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,64 +9,37 @@
 body {
     background-color: #9999;
     margin: 1em;
-  
-}
-
-
-
-.chk1 {
- 
-}
-
-
-
-
-
-
-.chk1+label span {
-    display: inline-block;
-    font-size: 26px;
-    width: 1em;
-    height: 1em;
-    background-color: red;
 
 }
 
 
 
-
-.chk1:checked+label span {
-    background-color: blue;
-    position: relative;
-
-
-
+span {
+    margin-top: 1em;
 }
 
 
 
-.chk1:checked+label span::before {
-    content: "";
-    /* content: "": Isso cria um conteúdo vazio que pode ser estilizado, permitindo que o pseudo-elemento ::before tenha um efeito visual. */
-    display: block;
-    /* display: block: Define o pseudo-elemento como um bloco, o que significa que ele ocupará toda a largura disponível. */
+.chk2 input[type="checkbox"] {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
     position: absolute;
-    /* position: absolute: O pseudo-elemento é posicionado em relação ao seu elemento pai mais próximo que tiver position: relative. Isso permite controle preciso sobre sua posição. */
-    border: 2px solid white;
-    /* border: 2px solid white: Aplica uma borda branca de 2 pixels ao redor do pseudo-elemento. */
-    top: 2px;
-    /* top, left, right, bottom: Essas propriedades definem o espaço interno do pseudo-elemento, ajustando onde ele se posiciona dentro do seu contêiner. */
-    left: 10px;
-    right: 8px;
-    bottom: 8px;
-    transform: rotate(45deg);
-    /* transform: rotate(45deg): Rotaciona o pseudo-elemento em 45 graus, o que geralmente é usado para criar um efeito de "marca de seleção" (checkmark). */
-    border-left-color: transparent;
-    border-top-color: transparent;
-    /* border-left-color: transparent e border-top-color: transparent: Isso cria um triângulo, removendo a cor da borda esquerda e superior, permitindo que a borda inferior e direita formem um "V", que é uma forma comum para indicar que algo está selecionado. */
-
+    outline: none;
+    /* Essa configurção define em esconder com os checkbox */
 
 }
+
+
+
+
+
+.chk2 input[type="checkbox"]:focus+span {
+    outline: 2px solid white;
+    /* Essa configuração define em por uma borda outline branca ao redor das span que virou um checkbox */
+}
+
+
 
 
 
@@ -87,11 +60,6 @@ body {
 
 
 
-
-                                
-
-
-
 .chk2 input[type="checkbox"]:checked+span {
     /* input[type="checkbox"]:checked: Este seletor específico seleciona checkboxes que estão marcados (ou seja, a opção está selecionada). */
     background-color: orange;
@@ -107,14 +75,21 @@ body {
 
 .chk2 input[type="checkbox"]:checked+span::before {
     content: "";
+    /* content: "": Isso cria um conteúdo vazio que pode ser estilizado, permitindo que o pseudo-elemento ::before tenha um efeito visual. */
     position: absolute;
+    /* position: absolute: O pseudo-elemento é posicionado em relação ao seu elemento pai mais próximo que tiver position: relative. Isso permite controle preciso sobre sua posição. */
     border: 2px solid white;
+    /* border: 2px solid white: Aplica uma borda branca de 2 pixels ao redor do pseudo-elemento. */
     top: 0;
+    /* top, left, right, bottom: Essas propriedades definem o espaço interno do pseudo-elemento, ajustando onde ele se posiciona dentro do seu contêiner. */
     left: 8px;
     right: 8px;
     bottom: 6px;
     transform: rotate(45deg);
+    /* transform: rotate(45deg): Rotaciona o pseudo-elemento em 45 graus, o que geralmente é usado para criar um efeito de "marca de seleção" (checkmark). */
     border-left-color: transparent;
     border-top-color: transparent;
-   
+    /* border-left-color: transparent e border-top-color: transparent: Isso cria um triângulo, removendo a cor da borda esquerda e superior, permitindo que a borda inferior e direita formem um "V", que é uma forma comum para indicar que algo está selecionado. */
+
+
 }

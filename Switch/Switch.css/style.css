@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #9999;
+    margin: 1em;
+}
+
+
+
+.switch span {
+    display: inline-block;
+    position: relative;
+    font-size: 3em;
+    width: 60px;
+    height: 30px;
+    background-color: aqua;
+    border-radius: 35px;
+    transition: all 1s;
+
+
+
+}
+
+
+
+
+.switch span::before{
+
+
+
+
+}

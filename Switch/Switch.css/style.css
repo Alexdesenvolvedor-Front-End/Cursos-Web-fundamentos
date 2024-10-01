@@ -10,8 +10,7 @@
 
 body {
     background-color: #9999;
-    width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,18 +19,28 @@ body {
 
 
 
+.switch {
+    display: block;
+    margin-top: 2em;
+}
+
+
+
+.switch input {
+    display: none;
+}
+
 
 
 
 .switch span {
     display: inline-block;
-    width: 4em;
-    height: 2em;
-    background-color: aqua;
+    width: 55px;
+    height: 30px;
+    background-color: #a09d9d;
     border-radius: 1em;
-    margin-top: 1em;
-
-
+    position: relative;
+    cursor: pointer;
 
 
 }
@@ -41,18 +50,33 @@ body {
 
 .switch span::after {
     content: '';
-    display: block;
-    width: 2em;
-    height: 2em;
+    width: 25px;
+    height: 25px;
     background-color: white;
-    border-radius: 50%;
-    transition: all .5s;
-    transition-timing-function: cubic-bezier(0.01, -0.02, 0, 2.13);
-    transition-delay: .1s;
-    box-shadow: inset 2px 0px 4px rgba(0, 0, 0, .5), -2px 0px 2px rgba(0, 0, 0, .5);
     position: absolute;
-
-
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: all .5s;
+    /* all: Indica que a transição deve ser aplicada a todas as propriedades que mudarem. */
+    /* .5s: Define a duração da transição como meio segundo (500 milissegundos). */
+    transition-timing-function: cubic-bezier(0.01, -0.02, 0, 2.13);
+    /* cubic-bezier(x1, y1, x2, y2): É uma função que permite criar uma curva de Bézier personalizada, onde x1, y1, x2 e y2 são valores que determinam a forma da curva. */
+    transition-delay: .1s;
+    /* .1s: Indica que o atraso deve durar 0,1 segundos (100 milissegundos). */
+    box-shadow: inset 2px 0px 4px rgba(0, 0, 0, .5), -2px 0px 2px rgba(0, 0, 0, .5);
+    /* inset: Indica que a sombra deve ser aplicada dentro do elemento, em vez de fora. Isso cria um efeito de profundidade interna. */
+    /* 2px 0px 4px rgba(0, 0, 0, .5):
+    2px: Deslocamento horizontal da sombra (para a direita).
+    0px: Deslocamento vertical da sombra (sem deslocamento para cima ou para baixo).
+    4px: Raio de desfoque, que determina o quão "difusa" a sombra aparece.
+    rgba(0, 0, 0, .5): A cor da sombra, neste caso, um preto semi-transparente.
+    -2px 0px 2px rgba(0, 0, 0, .5):
+    -2px: Deslocamento horizontal da sombra (para a esquerda).
+    0px: Deslocamento vertical da sombra (sem deslocamento).
+    2px: Raio de desfoque, menor que o da primeira sombra.
+    rgba(0, 0, 0, .5): A mesma cor preta semi-transparente. */
+    transform: translateX(0);
 
 }
 
@@ -61,6 +85,25 @@ body {
 
 .switch input:checked+span::after {
     transform: translateX(100%);
+}
 
 
+
+
+
+
+
+.switch input:checked~span {
+    background-color: #ff0000;
+
+}
+
+
+
+
+
+
+.switch input[type="checkbox"]:focus+span {
+    outline: 2px solid black;
+    outline-offset: 2px;
 }

@@ -26,9 +26,12 @@ body {
 
 
 
-.switch input {
+
+input {
     display: none;
 }
+
+
 
 
 
@@ -97,9 +100,3 @@ body {
     background-color: #ff0000;
 
 }
-
-
-
-
-
-

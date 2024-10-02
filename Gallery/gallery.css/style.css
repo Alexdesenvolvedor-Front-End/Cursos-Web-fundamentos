@@ -1,0 +1,70 @@
+:root {}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+html {
+    font-size: 62.5%;
+}
+
+
+
+
+
+
+body {
+    background-color: #999999;
+    font-family: sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+.gallery {
+    width: 58rem;
+    height: 35rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: white;
+
+}
+
+
+
+
+
+.image a {
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+.gallery p {
+    background-color: rgba(0, 0, 0, .8);
+    padding: 1em;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 2px;
+
+
+
+
+}

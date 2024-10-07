@@ -44,6 +44,7 @@ h1 {
 
 img {
     max-width: 100%;
+    /* Define as imagens se redimensionarão para não ultrapassar a largura do seu contêiner pai */
 
 
 }
@@ -73,8 +74,11 @@ img {
 
 .gallery .image {
     flex-basis: calc(25% - .5em);
+    /* Essa configuração define em subtrair o valor de 25% pelo .5em em gap que foi aplicado na class gallery */
     position: relative;
     overflow: hidden;
+    /* overflow: hidden;: Garante que qualquer conteúdo que exceda os limites do contêiner (como uma imagem que é muito grande) seja cortado e não apareça fora dos limites do item. Isso é especialmente útil para manter um layout limpo e organizado, especialmente em galerias de imagens. */
+
 
 }
 
@@ -95,6 +99,7 @@ img {
     font-size: .80em;
     text-align: center;
     transform: translateY(100%);
+    /*  Inicialmente move o parágrafo para fora da vista (abaixo do seu container), provavelmente para uma animação. */
     transition: all .5s;
 }
 
@@ -104,6 +109,7 @@ img {
 
 .image:hover p {
     transform: translateY(0);
+    /* translateY(0) move o elemento para a sua posição original na direção vertical (Y). Isso geralmente é usado em conjunto com outras transformações, como translateY(-20px) ou algo semelhante, para criar um efeito de animação suave. Nesse caso, ao passar o mouse, o parágrafo se moveria para sua posição original. */
 
 
 }
@@ -113,7 +119,10 @@ img {
 
 .image img {
     transform: scale(1);
+    /* transform: scale(1);: Isso define a escala inicial das imagens como 1, ou seja, elas são exibidas em seu tamanho original. Você pode usar essa propriedade para aumentar ou diminuir o tamanho das imagens quando necessário, por exemplo, ao passar o mouse sobre elas. */
+
     transition: all .5s;
+    /* transition: all .5s;: Isso adiciona uma transição suave para todas as propriedades que mudam. No caso de um efeito de hover, por exemplo, se você aumentar a escala da imagem para algo como scale(1.1), a imagem irá aumentar suavemente em um período de 0.5 segundos. */
 }
 
 
@@ -121,6 +130,9 @@ img {
 
 .image:hover img {
     transform: scale(1.5);
+    /* image:hover img { transform: scale(1.5); }, tem a função de aplicar um efeito de aumento à imagem quando o usuário passa o mouse sobre o elemento com a classe .image. */
+
+    /* transform: scale(1.5);: Esse estilo aplica uma transformação que aumenta a escala da imagem em 150% (1.5 vezes seu tamanho original). */
 
 }
 

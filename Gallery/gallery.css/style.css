@@ -120,7 +120,6 @@ img {
 .image img {
     transform: scale(1);
     /* transform: scale(1);: Isso define a escala inicial das imagens como 1, ou seja, elas são exibidas em seu tamanho original. Você pode usar essa propriedade para aumentar ou diminuir o tamanho das imagens quando necessário, por exemplo, ao passar o mouse sobre elas. */
-
     transition: all .5s;
     /* transition: all .5s;: Isso adiciona uma transição suave para todas as propriedades que mudam. No caso de um efeito de hover, por exemplo, se você aumentar a escala da imagem para algo como scale(1.1), a imagem irá aumentar suavemente em um período de 0.5 segundos. */
 }
@@ -135,6 +134,35 @@ img {
     /* transform: scale(1.5);: Esse estilo aplica uma transformação que aumenta a escala da imagem em 150% (1.5 vezes seu tamanho original). */
 
 }
+
+
+
+
+.image::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    inset: 0;
+    /* inset: 0;: É uma shorthand para definir as margens (topo, direita, fundo e esquerda) do pseudo-elemento como 0, fazendo com que ele preencha todo o espaço do elemento pai. */
+    opacity: .5;
+    /* opacity: .5;: Define a opacidade do pseudo-elemento em 50%, permitindo que o conteúdo abaixo (o elemento original) ainda seja visível, mas com uma leve tonalidade branca. */
+    pointer-events: none;
+    /* A propriedade CSS pointer-events permite autores controlarem sob qualquer circustancia(se houver) um elemento gráfico particular podendo ser o alvo do evento do mouse, nesse caso aqui ele habilitou (cursor ponte ) */
+    transition: opacity all .5s;
+
+}
+
+
+
+
+
+.image:hover::after {
+    opacity: 0;
+}
+
+
+
+
 
 
 

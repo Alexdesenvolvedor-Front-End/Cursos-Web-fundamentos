@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+html{
+    font-size: 62.5%;
+}
+
+
+
+
+
+
+
+:root {
+    --primary-font-color: #FE5C16;
+    --second-body-color: #B6BDBF;
+    --third-main-color: #EEE9E0;
+    --forth-menu-color: #250707;
+}
+
+
+
+
+
+body {
+    display: flex;
+    /* background-color:  */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: hsl(0, 1%, 44%);
+    min-height: 100vh;
+
+
+
+
+}
+
+
+
+
+.menu {
+    width: 270px;
+    background-color: var(--forth-menu-color);
+ 
+
+
+}
+
+
+
+
+
+
+
+main{
+    background-color: var(--third-main-color);
+}
+
+
+
+
+
+
+
+
+
+
+img {
+    width: 55%;
+    display: block;
+    margin: 1em;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+
+
+
+}
+
+
+
+
+
+a{
+    color: inherit;
+}

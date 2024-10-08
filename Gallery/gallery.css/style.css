@@ -17,7 +17,7 @@ html {
 
 
 body {
-    background-color: #999999;
+    background-color: #99999986;
     font-family: sans-serif;
     min-height: 100vh;
     display: flex;
@@ -61,7 +61,7 @@ img {
     background-color: white;
     gap: .5em;
     padding: .75em;
-    box-shadow: 0 0 10px 6px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, .2);
 
 
 }

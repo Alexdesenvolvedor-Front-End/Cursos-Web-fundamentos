@@ -1,3 +1,10 @@
+html {
+    font-size: 62.5%;
+}
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,24 +14,12 @@
 
 
 
-
-
-
-html{
-    font-size: 62.5%;
-}
-
-
-
-
-
-
-
 :root {
     --primary-font-color: #FE5C16;
-    --second-body-color: #B6BDBF;
+    --second-menu-color: #250707;
     --third-main-color: #EEE9E0;
-    --forth-menu-color: #250707;
+    --forth-link-color: #361f1f;
+
 }
 
 
@@ -33,13 +28,10 @@ html{
 
 body {
     display: flex;
-    /* background-color:  */
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Roboto Serif", serif;
     color: hsl(0, 1%, 44%);
     min-height: 100vh;
-
-
-
+    line-height: 1.7;
 
 }
 
@@ -47,9 +39,12 @@ body {
 
 
 .menu {
-    width: 270px;
-    background-color: var(--forth-menu-color);
- 
+    flex: 0 0 26rem;
+    /* O primeiro 0 indica que o item não deve crescer além do seu tamanho base. */
+    /* O segundo 0 significa que o item não deve encolher. */
+    /* 26rem é a base de largura do item. Isso significa que o menu terá uma largura fixa de 26rem. */
+    background-color: var(--second-menu-color);
+
 
 
 }
@@ -59,36 +54,121 @@ body {
 
 
 
+.navegation {
+    text-align: right;
+    padding: 2.5rem;
+}
 
-main{
+
+
+
+
+.navegation ul {
+    list-style-type: none;
+    padding-top: 1.5em;
+}
+
+
+
+
+
+
+.navegation ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    display: block;
+    padding: 2rem 0;
+
+
+
+}
+
+
+
+
+.navegation ul li {
+    border-bottom: 1px solid;
+    display: block;
+    padding: .4rem 0;
+}
+
+
+
+
+
+.navegation ul a:hover {
+    background-color: var(--forth-link-color);
+    padding-right: 2rem;
+}
+
+
+
+
+
+
+.main-principal {
     background-color: var(--third-main-color);
+    flex: 1 0;
+    /* O primeiro valor 1 indica que o item pode crescer para ocupar espaço disponível no contêiner. */
+    /* O segundo valor 0 significa que o item não deve encolher, ou seja, ele manterá seu tamanho base. */
+    padding: 7rem;
+
+
+}
+
+
+
+
+.main-principal h1 {
+    font-size: 4rem;
+    color: #7b7b7b;
+
+}
+
+
+
+
+.main-principal h2 {
+    padding-top: 3rem;
+    font-size: 2rem;
+    color: var(--primary-font-color);
+
+}
+
+
+
+.main-principal h3 {
+    font-size: 1.5rem;
+    color: var(--primary-font-color);
+
+
+}
+
+
+
+
+.main-principal p {
+    padding-top: 1rem;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
 }
 
 
 
 
 
-
+.rede-socias {
+    padding-top: 2rem;
+}
 
 
 
 
 img {
-    width: 55%;
-    display: block;
-    margin: 1em;
+    width: 10rem;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 50%;
 
-
-
-}
-
-
-
-
-
-a{
-    color: inherit;
 }

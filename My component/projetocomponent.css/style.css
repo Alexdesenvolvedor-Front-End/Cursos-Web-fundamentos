@@ -14,6 +14,9 @@ html {
 
 
 
+
+
+
 :root {
     --primary-font-color: #FE5C16;
     --second-menu-color: #250707;
@@ -27,14 +30,21 @@ html {
 
 
 
+
+
+
 body {
     display: flex;
     font-family: "Roboto Serif", serif;
     color: hsl(0, 1%, 21%);
     min-height: 100vh;
     line-height: 1.7;
+    overflow-x: hidden;
 
 }
+
+
+
 
 
 
@@ -54,11 +64,13 @@ body {
 
 
 
-
 .navegation {
     text-align: right;
     padding: 2.5rem;
 }
+
+
+
 
 
 
@@ -88,11 +100,16 @@ body {
 
 
 
+
+
 .navegation ul li {
     border-bottom: 1px solid;
     display: block;
     padding: .4rem 0;
 }
+
+
+
 
 
 
@@ -123,21 +140,31 @@ body {
 
 
 
+
+
+
 .main-principal h1 {
     font-size: 4rem;
     color: #7b7b7b;
 
+
 }
+
+
+
 
 
 
 
 .main-principal h2 {
-    padding-top: 3rem;
+
     font-size: 2rem;
     color: var(--primary-font-color);
 
 }
+
+
+
 
 
 
@@ -147,6 +174,9 @@ body {
 
 
 }
+
+
+
 
 
 
@@ -165,9 +195,10 @@ body {
 .highlight {
     border-left: 1px solid var(--primary-font-color);
     padding-left: 2em;
-    margin-bottom: 3em;
 
 }
+
+
 
 
 
@@ -177,6 +208,8 @@ body {
 .rede-socias {
     padding-top: 2rem;
 }
+
+
 
 
 
@@ -192,11 +225,31 @@ body {
 
 
 
-.cards {
+.cards_article1 {
     max-width: 640px;
     background-color: var(--fifith-cards-color);
+}
+
+
+
+
+
+.cards_article2 {
+    background-color: var(--fifith-cards-color);
+    max-width: 425px;
+}
+
+
+
+
+.cards_article3 {
+    background-color: var(--fifith-cards-color);
+    max-width: 316px;
 
 }
+
+
+
 
 
 
@@ -210,18 +263,41 @@ body {
 
 
 
-.card_content p, h3{
+.card_content p,
+h3 {
     margin: 0
 }
 
 
 
 
-.card_content h3{
-   font-size: 2rem;
+
+
+
+.card_content h3 {
+    font-size: 2rem;
 }
 
 
+
+
+
+
+.row {
+    display: flex;
+    gap: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+
+
+
+
+
+
+section {
+    margin-bottom: 2.5rem;
+}
 
 
 

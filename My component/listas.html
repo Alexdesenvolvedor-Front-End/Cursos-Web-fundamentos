@@ -62,7 +62,7 @@
 
                 <div>
                     <h3>Ordenadas</h3>
-                    <ol>
+                    <ol start="3"> <!-- start muda a ordem do elemento fazendo que ele começe com o número 3 -->
                         <li>Item 01</li>
                         <li>Item 02</li>
                         <li>Item 03</li>
@@ -103,6 +103,44 @@
                         <li>Item 03</li>
                     </ul>
                 </div>
+
+                <div>
+                    <h3>Ordenadas</h3>
+                    <ol start="6" type="A">
+                        <!-- start muda a ordem do elemento fazendo que ele começe com o número 6, e type="A" acrescenta letras-->
+                        <li>Item 1</li>
+                        <li>Item 2
+                            <ol type="I" reversed>
+                                <!-- type="I" acrescenta número romanos e o reversed inverter a ordem dos números-->
+                                <li>Item 2.1</li>
+                                <li>Item 2.2
+                                    <ol type="a" start="10">
+                                        <li>Item 2.1.1</li>
+                                        <li>Item 2.1.2</li>
+                                        <li>Item 2.1.3</li>
+                                    </ol>
+                                </li>
+                                <li>Item 2.3</li>
+                            </ol>
+                        </li>
+                        <li>Item 3</li>
+                    </ol>
+                </div>
+
+                <div>
+                    <h3>Ambas</h3>
+                    <ol>
+                        <li>Item 1</li>
+                        <li>Item 2
+                            <ul class="list-emoji">
+                                <li>Item 2.1</li>
+                                <li>Item 2.2</li>
+                                <li>Item 2.3</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
             </div>
 
 

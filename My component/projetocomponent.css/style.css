@@ -24,6 +24,8 @@ html {
     --forth-link-color: #361f1f;
     --fifith-cards-color: #ccc;
 
+    --default-gap: 1rem;
+
 }
 
 
@@ -283,7 +285,7 @@ h3 {
 
 .row {
     display: flex;
-    gap: 1.5rem;
+    gap: var(--default-gap);
     padding-top: 1.5rem;
     justify-content: space-between;
 }
@@ -328,14 +330,27 @@ h3 {
 
 
 
+
+
+
 input,
 label,
 textarea,
 select {
+    display: inline-block;
     width: 100%;
+
 }
 
 
+
+
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    /* width: auto;: Isso configura a largura dos botões de rádio (radio buttons) para ser automaticamente ajustada. Isso significa que o navegador irá definir a largura de acordo com o estilo padrão para esse elemento, sem forçar uma largura específica. */
+}
 
 
 
@@ -366,7 +381,75 @@ select {
     background-color: var(--second-menu-color);
     color: var(--third-main-color);
     font-size: 1.2rem;
+    border-radius: 5px;
+   
 }
+
+
+
+
+.btn-normal {
+    padding: 1em 3em;
+    background-color: var(--second-menu-color);
+    color: #ffff;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: .1em;
+    border: none;
+
+}
+
+
+
+
+.btn-outline {
+    padding: 1em 3em;
+    background-color: #2507076e;
+    color: #ffff;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin: .1em;
+    border: none;
+   
+}
+
+
+
+
+
+.btn-full {
+    display: block;
+    width: 100%;
+    padding: 1.2em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--second-menu-color);
+    color: #ffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+.btn-full-outline {
+    display: block;
+    width: 100%;
+    padding: 1.2em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    border: none;
+    background-color: #2507076e;
+    color: #ffff;
+    font-size: 1.2rem;
+   
+}
+
 
 
 
@@ -376,14 +459,30 @@ select {
 .btn:hover {
     background-color: #2507076e;
     cursor: pointer;
+   
 }
 
 
 
 
-/* input[type="radio"]{
-     width: auto;
-} */
+
+
+.btn-outline:hover {
+    outline: 1px solid black;
+    cursor: pointer;
+ 
+
+}
+
+
+
+
+
+
+.btn-full-outline:hover {
+    outline: 1px solid black;
+    cursor: pointer;
+}
 
 
 
@@ -395,6 +494,31 @@ section {
     margin-bottom: 1rem;
 }
 
+
+
+
+
+
+
+
+
+label {
+    font-size: 1.3rem;
+}
+
+
+
+
+
+
+
+
+.quiz {
+    width: calc(50% - var(--default-gap) / 2);
+    /* Essa configuração irar dividir a variavel por 2 e o resultado vai fazer a subtração por 50%*/
+    /* Isso vai alinhar o select com os input e text area */
+
+}
 
 
 

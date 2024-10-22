@@ -27,7 +27,8 @@
         "order": 1,
         "id": 0,
         "name": "youtube",
-        "prevSize": 32
+        "prevSize": 32,
+        "code": 59648
       },
       "setIdx": 1,
       "setId": 2,
@@ -53,7 +54,8 @@
         "name": "facebook",
         "order": 3,
         "id": 401,
-        "prevSize": 32
+        "prevSize": 32,
+        "code": 60048
       },
       "setIdx": 2,
       "setId": 1,
@@ -81,7 +83,8 @@
         "name": "instagram",
         "order": 2,
         "id": 403,
-        "prevSize": 32
+        "prevSize": 32,
+        "code": 60050
       },
       "setIdx": 2,
       "setId": 1,
@@ -107,7 +110,8 @@
         "name": "linkedin",
         "order": 4,
         "id": 458,
-        "prevSize": 32
+        "prevSize": 32,
+        "code": 60105
       },
       "setIdx": 2,
       "setId": 1,

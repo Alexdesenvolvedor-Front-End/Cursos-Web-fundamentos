@@ -18,7 +18,7 @@ html {
     --third-houver-color: #252E31;
     --forth-font-header-color: #0C9ABE;
     --fifth-font-h2-h3-h4-color: #FF8C00;
-    --sixth-cards-color: #7b7b7b;
+    --sixth-cards-color: #7b7b7b85;
 }
 
 
@@ -186,18 +186,6 @@ p {
 
 
 
-
-
-a {
-    color: inherit;
-    /* Aqui estou erdando a cor do body para os links */
-
-}
-
-
-
-
-
 .navegation ul li a:hover,
 .navegation ul li a:focus {
     background-color: var(--third-houver-color);
@@ -207,38 +195,55 @@ a {
 
 
 
-.cards_article1 {
+.article_cards {
     max-width: 640px;
     background-color: var(--sixth-cards-color);
 
+
 }
 
+
+
+
+.article_cards3 {
+    max-width: 423px;
+    background-color: var(--sixth-cards-color);
+}
+
+
+
+
+
+
+.article_cards4 {
+    max-width: 316px;
+    background-color: var(--sixth-cards-color);
+}
 
 
 
 
 .card_content {
-    padding: 1rem;
-}
-
-
-
-.card_content h3 {
-    font-size: 1.8rem;
+    padding: .7rem 1rem;
 }
 
 
 
 
+.card_title {
+    font-size: 2rem;
+}
 
-.row{
+
+
+.row {
     display: flex;
-    gap: 1.5rem;
-    padding: 1.1rem 0;
-  
-
+    gap: 1rem;
+    padding: 1rem 0;
 }
 
 
 
-
+a:hover {
+    color: brown;
+}

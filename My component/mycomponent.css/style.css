@@ -1,261 +1,133 @@
 * {
-    /* padding: 0; */
     margin: 0;
     box-sizing: border-box;
 }
 
 
 
-html {
-    font-size: 62.5%;
-}
-
 
 
 :root {
-    --first-header-color: #2B3639;
-    --second-font-color: #1E2628;
-    --third-houver-color: #252E31;
-    --forth-font-header-color: #0C9ABE;
-    --fifth-font-h2-h3-h4-color: #FF8C00;
-    --sixth-cards-color: #7b7b7b85;
-}
+    --primeira-color: #ff7833;
+    --segunda-color: #0C9ABE;
+    --main-header-color: #2B3639;
+    --header-houver-color: #06c5f5;
 
+}
 
 
 
 body {
     display: flex;
-    color: var(--second-font-color);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     min-height: 100vh;
-    line-height: 1.7;
+    color: #6e6d6d;
+    background-color: #ccc;
+
+}
 
 
+h1 {
+    font-size: 2.5em;
+    color: var(--primeira-color);
+    padding-bottom: 1em;
 }
 
 
 
 
-.menu-header {
-    flex: 0 0 26rem;
-    /*  flrx-grow: 0; define que o .menu-header não irá crescer além do seu tamanho inicial, mesmo que haja espaço disponível no contêiner, flex-shrink: 0; Configura que o elemento não diminuirá de tamanho mesmo que o espaço no contêiner seja reduzido, flex-basis: 26rem; Define o tamanho base (largura) do elemento como 26rem. Isso significa que o .menu-header terá um tamanho fixo de 26rem; */
-    background-color: var(--first-header-color);
-}
-
-
-
-
-.navegation {
-    text-align: right;
-    padding: 6rem 1rem 8rem;
-    /* Essa configuração define 60px no topo, 10px nas laterais esquerda e direita, e 80px na parte inferior bottom*/
-
-}
-
-
-
-
-.navegation ul {
-    list-style-type: none;
-    padding: 2rem;
-}
-
-
-
-
-.navegation ul a {
-    display: block;
-    padding: 1rem 0;
-    text-decoration: none;
-    color: var(--forth-font-header-color);
-    font-size: 1.3rem;
-    transition: padding-right .2s, background-color .4s;
-    /* Define uma transição suave para as propriedades padding-right (por 0,2 segundos) e background-color (por 0,4 segundos). Isso significa que se esses valores mudarem, a alteração será animada. */
-
-
-}
-
-
-
-
-
-
-.navegation li {
-    border-bottom: 1px solid #7b7b7b;
-    padding: .4rem 0;
-
-}
-
-
-
-
-
-
-.highlight1 {
-    border-left: 1px solid var(--fifth-font-h2-h3-h4-color);
-    font-size: 1.2rem;
-    padding-left: 2rem;
-    margin-bottom: 2rem;
-
-}
-
-
-
-
-.highlight2 {
-    padding: 1rem 0;
-    /* Aqui foi definido essa configuração para dar um respiro nos elementos dentro do article */
-}
-
-
-
-
-
-
-main h1 {
-    font-size: 4rem;
-    color: var(--fifth-font-h2-h3-h4-color);
-    padding-top: 5rem;
-    margin-bottom: 2.5rem;
-}
-
-
-
-
-h2 {
-    color: var(--fifth-font-h2-h3-h4-color);
-
-}
-
-
-
-h3 {
-    color: var(--fifth-font-h2-h3-h4-color);
-    font-size: 1.4rem;
-}
-
-
-
+h2,
+h3,
 h4 {
-    color: var(--fifth-font-h2-h3-h4-color);
-    font-size: 1.3rem;
+    color: var(--segunda-color);
+    padding: .5em 0;
 }
-
-
-
-
-
-.rede-socias {
-    padding-top: 2rem;
-
-}
-
-
 
 
 p {
-    padding-top: .9rem;
-    font-size: 1.3rem;
-
+    padding: .5em 0;
 }
 
 
 
-
-
-.perfil {
-    width: 25%;
+.perfil-img {
+    width: 40%;
     aspect-ratio: 1 / 1;
+    /* Essa configuração aspect-ratio: 1 / 1; Mantém a proporção da imagem em 1:1, ou seja, a imagem será quadrada. */
     object-fit: cover;
+    /* Quando você usa object-fit: cover, a imagem é redimensionada para cobrir completamente o contêiner. Isso significa que a imagem será dimensionada de forma a preencher toda a área do contêiner,  cortando as partes que excedem as bordas, se necessário.  */
     border-radius: 50%;
-
-
-}
-
-
-
-
-
-.main-principal {
-    flex: 1 0;
-    /* Aqui foi definido que o flex-grow: 1; vai crescer na medida que tiver espaço, flex-shrink: Define que o elemento não vai encolher. */
-    padding-left: 5rem;
-
-}
-
-
-
-.navegation ul li a:hover,
-.navegation ul li a:focus {
-    background-color: var(--third-houver-color);
-    padding-right: 1.5rem;
-}
-
-
-
-
-.article_cards {
-    max-width: 640px;
-    background-color: var(--sixth-cards-color);
-
+    margin-bottom: 1em;
 
 }
 
 
 
 
-.article_cards3 {
-    max-width: 423px;
-    background-color: var(--sixth-cards-color);
+.main-header {
+    flex: 0 0 15em;
+    /* 0 (flex-grow): O elemento .main-header não crescerá para ocupar mais espaço disponível no contêiner. */
+    /* 0 (flex-shrink): O elemento .main-header não diminuirá de tamanho, mesmo que o contêiner tenha menos espaço disponível. */
+    /* 25rem (flex-basis): Define o tamanho base do elemento como 25rem. Ou seja, independentemente do tamanho do contêiner pai, .main-header terá sempre uma largura (ou altura, dependendo da direção do contêiner flex) de 25rem. */
+    background-color: var(--main-header-color);
 }
 
 
 
 
+.main {
+    padding: 5em 4.5em;
+    background-color: #ccc;
 
-
-.article_cards4 {
-    max-width: 316px;
-    background-color: var(--sixth-cards-color);
 }
 
 
 
 
-.card_content {
-    padding: .7rem 1rem;
+.main-nav {
+    text-align: right;
+    padding: 2em 1.5em;
+}
+
+
+
+.main-nav ul {
+    list-style: none;
+}
+
+
+
+.main-nav ul a {
+    display: block;
+    padding: 1.5em;
+    color: var(--segunda-color);
+    text-decoration: none;
+}
+
+
+
+.main-nav a:hover {
+    color: var(--header-houver-color);
+    transition: 1s;
 }
 
 
 
 
-.card_title {
-    font-size: 2rem;
+.main-nav li {
+    border-bottom: 1px solid #e7e7e7;
+
 }
 
 
 
-.row {
+a {
+    color: inherit;
+}
+
+
+.rede_sociais {
     display: flex;
-    gap: 1rem;
-    padding: 1rem 0;
-    
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-a:hover {
-    color: brown;
+    padding-top: 1.5em;
+    gap: 1.5em;
 }

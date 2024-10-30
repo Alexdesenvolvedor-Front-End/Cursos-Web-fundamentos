@@ -131,3 +131,10 @@ a {
     padding-top: 1.5em;
     gap: 1.5em;
 }
+
+
+
+.underline {
+    text-decoration: red wavy underline;
+    /* Essa configuração define um sublinhado no texto */
+}

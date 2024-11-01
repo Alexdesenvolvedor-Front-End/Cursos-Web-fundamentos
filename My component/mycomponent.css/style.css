@@ -12,6 +12,7 @@
     --segunda-color: #0C9ABE;
     --main-header-color: #2B3639;
     --header-houver-color: #06c5f5;
+    --card-content-color: #313338;
 
 }
 
@@ -21,7 +22,6 @@ body {
     display: flex;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     min-height: 100vh;
-    color: #6e6d6d;
     background-color: #ccc;
 
 }
@@ -47,6 +47,27 @@ h4 {
 p {
     padding: .5em 0;
     font-size: .8em;
+}
+
+
+
+
+
+
+
+
+.destaque {
+    border-left: 1px solid var(--segunda-color);
+    font-size: 1.1em;
+    padding-left: 2em;
+    margin-bottom: 2em;
+
+} 
+
+
+
+article {
+    padding: 1em 0;
 }
 
 
@@ -139,3 +160,16 @@ a {
     text-decoration: red wavy underline;
     /* Essa configuração define um sublinhado no texto */
 }
+
+
+
+.alex{
+    max-width: 740px;
+    background-color: #ffff;
+     
+   
+
+}
+
+
+

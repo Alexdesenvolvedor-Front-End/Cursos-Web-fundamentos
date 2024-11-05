@@ -24,6 +24,11 @@ body {
     min-height: 100vh;
     background-color: #ccc;
     line-height: 1.2em;
+    overflow-x: hidden;
+
+
+
+
 
 
 }
@@ -98,6 +103,7 @@ p {
     padding: 5em 4.5em;
     background-color: #ccc;
 
+
 }
 
 
@@ -161,25 +167,40 @@ a {
 
 
 .card {
-    max-width: 740px;
+    width: 60%;
+    /* Aqui eu apliquei essa configuração para as imagens se enquadrarem no container */
     background-color: var(--card-content-color);
 
+
+
 }
 
 
 
-.cards_content {
-    padding: .6em;
+
+
+.card img {
+    width: 100%;
 }
+
+
+
+.cards_content{
+    padding: .3em;
+}
+
+
+.card_title {
+    padding: .5em;
+}
+
+
+
 
 
 .row {
     display: flex;
     gap: 1em;
+    padding: .5em 0;
 
-}
-
-
-img {
-    max-width: 100%;
 }

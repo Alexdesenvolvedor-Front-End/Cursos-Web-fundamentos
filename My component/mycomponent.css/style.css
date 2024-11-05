@@ -1,10 +1,8 @@
 * {
     margin: 0;
     box-sizing: border-box;
+
 }
-
-
-
 
 
 :root {
@@ -13,6 +11,7 @@
     --main-header-color: #2B3639;
     --header-houver-color: #06c5f5;
     --card-content-color: #ffff;
+    --input-color-: #2b3639;
 
 }
 
@@ -26,11 +25,6 @@ body {
     line-height: 1.2em;
     overflow-x: hidden;
 
-
-
-
-
-
 }
 
 
@@ -41,13 +35,12 @@ h1 {
 }
 
 
-
-
 h2,
 h3,
 h4 {
     color: var(--segunda-color);
-    padding: .5em 0;
+    padding-bottom: .9em;
+
 }
 
 
@@ -60,9 +53,10 @@ p {
 
 .destaque {
     border-left: 1px solid var(--segunda-color);
-    font-size: 1.1em;
+    font-size: 1em;
     padding-left: 2em;
     margin-bottom: 2em;
+
 
 }
 
@@ -86,8 +80,6 @@ p {
 }
 
 
-
-
 .main-header {
     flex: 0 0 15em;
     /* 0 (flex-grow): O elemento .main-header não crescerá para ocupar mais espaço disponível no contêiner. */
@@ -97,16 +89,12 @@ p {
 }
 
 
-
-
 .main {
     padding: 5em 4.5em;
     background-color: #ccc;
 
 
 }
-
-
 
 
 .main-nav {
@@ -135,7 +123,6 @@ p {
     color: var(--header-houver-color);
     transition: 1s;
 }
-
 
 
 
@@ -170,24 +157,23 @@ a {
     width: 60%;
     /* Aqui eu apliquei essa configuração para as imagens se enquadrarem no container */
     background-color: var(--card-content-color);
-
-
-
 }
-
 
 
 
 
 .card img {
     width: 100%;
+    /* width: 100% faz com que a largura da imagem seja igual à largura do seu contêiner pai. */
 }
 
 
 
-.cards_content{
+.cards_content {
     padding: .3em;
 }
+
+
 
 
 .card_title {
@@ -196,11 +182,145 @@ a {
 
 
 
-
-
 .row {
     display: flex;
     gap: 1em;
-    padding: .5em 0;
+    justify-content: space-between;
+    margin-bottom: 1em;
 
+}
+
+
+
+.row1 {
+    display: flex;
+    gap: 18.75em;
+    justify-content: space-between;
+    padding-bottom: 1em;
+}
+
+
+.row1>* {
+    flex-grow: 1;
+    /* Essa configuração define para o elemento crescer */
+
+}
+
+
+
+
+.alternate {
+    list-style-type: none;
+
+
+}
+
+
+
+.alternate li:not(:last-child) {
+    border-bottom: 1px solid var(--card-content-color);
+    /* Essa configuração CSS aplica uma borda inferior em todos os itens de uma lista (li) dentro de um contêiner com a classe .alternate, exceto para o último item da lista. */
+
+}
+
+
+
+.emoji {
+    list-style-type: "\1f642";
+    /* Essa configuração define por um emoji nas listas */
+}
+
+
+
+label,
+input,
+textarea,
+select {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: .4em;
+}
+
+
+
+input,
+textarea,
+select {
+    background-color: hsla(0, 0%, 87%, 0.867);
+    padding: 1.2em;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 2em;
+}
+
+
+
+input[type="radio"] input[type="checkbox"] {
+    width: auto;
+}
+
+
+
+address {
+    padding-top: 1em;
+}
+
+
+
+.form-curso {
+    width: 61%;
+}
+
+
+
+fieldset {
+    border: none;
+}
+
+
+
+.btn {
+    background-color: #06c5f5;
+    cursor: pointer;
+    color: #ffff;
+}
+
+
+
+.reset-btn {
+    cursor: pointer;
+}
+
+
+
+
+.btn:hover {
+    background-color: var(--input-color-);
+    transition: 3s;
+}
+
+
+
+
+.btn-normal {
+    padding: .5em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    border: none;
+    background-color: #06c5f5;
+    color: #ffff;
+    cursor: pointer;
+}
+
+
+
+.btn-full {
+    padding: .5em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    border: none;
+    background-color: #06c5f5;
+    color: #ffff;
+    cursor: pointer;
+    font-size: 1.5em;
 }

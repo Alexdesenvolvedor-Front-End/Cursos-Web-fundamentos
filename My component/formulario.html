@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="descripition" content="descrição da minha página">
+    <meta name="author" content="Alex Rodrigues Vitorino">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript">
+    <link rel="stylesheet" href="mycomponent.css/style.css">
+    <title>My components</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <img src="imagens/perfil.jpg" alt="" class="perfil-img">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tipografia.html">Tipografia</a></li>
+                <li><a href="cards.html">Cards</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="formulario.html">Formulário</a></li>
+                <li><a href="botoes.html">Botões</a></li>
+                <li><a href="tabelas.html">Tabelas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <h1>My components</h1>
+
+
+        <section>
+            <h2>Entre em contato</h2>
+
+            <div class="row">
+
+                <form action="">
+                    <div class="row">
+                        <div>
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
+                        </div>
+
+                        <div>
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" placeholder="Digite um e-mail valido" required>
+                        </div>
+                    </div>
+
+                    <label for="mensagem">Digite sua mensagem</label>
+                    <textarea name="mensagem" id="mensagem" rows="6"></textarea>
+
+                    <input type="submit" value="Enviar" class="btn">
+                </form>
+
+                <address>
+                    <p><b>Endereço:</b> Broadway 10012, Nova York, NY, EUA </p>
+                    <p>T<b>elefone:</b> 000-000-000</p>
+                    <p><b>E-mail:</b> email@alex.com</p>
+                </address>
+            </div>
+        </section>
+
+        <section>
+            <h3>Cursos</h3>
+
+            <form action="" class="form-curso">
+                <label for="tecnologia">Qual é a sua linguagem preferida</label>
+                <select name="tecnologia" id="tecnologia">
+                    <option value="null">Selecione</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JavaScript</option>
+                    <option value="python">Python</option>
+                    <option value="c++">C++</option>
+                    <option value="c#">C#</option>
+                    <option value="php">PHP</option>
+                    <option value="c">C</option>
+                </select>
+
+                <div class="row">
+                    <input type="reset" value="Limpar" class="reset-btn">
+                    <input type="submit" value="Enviar" class="btn">
+                </div>
+            </form>
+
+        </section>
+    </main>
+
+</body>
+
+</html>

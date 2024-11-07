@@ -1,0 +1,37 @@
+body {
+    font-family: sans-serif;
+    background-image: linear-gradient(blue, green), url(../imagens/dibakar-roy-N52Ocwjia2s-unsplash.jpg);
+    background-attachment: fixed;
+
+
+}
+
+
+h1 {
+    text-align: center;
+}
+
+
+.cores {
+    width: 80%;
+    border: 8px dashed black;
+    padding: 1em;
+    margin: 20px auto;
+}
+
+
+.cores::before {
+    content: counter(contador);
+}
+
+
+
+seciton {
+    counter-reset: contador;
+}
+
+
+
+.cores {
+    counter-increment: contador;
+}

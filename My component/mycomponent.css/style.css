@@ -391,19 +391,38 @@ th {
 }
 
 
-.rede-sociais{
+.rede-sociais {
     display: flex;
     gap: 1em;
 }
 
 
 
-.icon{
-    display: inline-block;
+.icon {
     color: #ffff;
     font-size: 3em;
     vertical-align: middle;
+    /* Essa configuração alinha o texto a imagem */
     padding-right: .3em;
 }
 
 
+.link {
+    font-style: normal;
+    text-decoration: none;
+    transition: 2s;
+}
+
+
+
+.link:hover {
+    color: var(--header-houver-color);
+
+}
+
+
+.link:hover>.icon {
+    color: var(--header-houver-color);
+
+
+}

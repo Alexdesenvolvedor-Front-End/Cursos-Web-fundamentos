@@ -8,6 +8,6 @@ p a {
 p:has(a) {
     background-color: #999;
     /* 
-A regra CSS que você mencionou, p:has(a) { background-color: #999; }, aplica um fundo cinza (#999) a todos os elementos <p> que contêm pelo menos um elemento <a> dentro deles. */
+A regra CSS p:has(a) { background-color: #999; }, aplica um fundo cinza (#999) a todos os elementos <p> que contêm pelo menos um elemento <a> dentro deles. */
 
 }

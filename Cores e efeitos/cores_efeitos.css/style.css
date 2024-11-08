@@ -22,16 +22,19 @@ h1 {
 
 .cores::before {
     content: counter(contador);
+    /* Essa configuração define em criar um contador */
 }
 
 
 
 seciton {
     counter-reset: contador;
+    /* Essa configuração define em criar um contador */
 }
 
 
 
 .cores {
     counter-increment: contador;
+    /* Essa configuração define em criar um contador */
 }

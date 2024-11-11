@@ -1,7 +1,8 @@
 body {
     font-family: sans-serif;
-    background-image: linear-gradient(blue, green), url(../imagens/dibakar-roy-N52Ocwjia2s-unsplash.jpg);
+    background-image: linear-gradient(to top, rgb(0 0 255 / .5) 58%, transparent, red), url(../imagens/dibakar-roy-N52Ocwjia2s-unsplash.jpg);
     background-attachment: fixed;
+    background-blend-mode: difference;
 
 
 }
@@ -12,18 +13,14 @@ h1 {
 }
 
 
-.cores {
-    width: 80%;
-    border: 8px dashed black;
-    padding: 1em;
-    margin: 20px auto;
-}
 
 
 .cores::before {
     content: counter(contador);
     /* Essa configuração define em criar um contador */
 }
+
+
 
 
 
@@ -37,4 +34,54 @@ seciton {
 .cores {
     counter-increment: contador;
     /* Essa configuração define em criar um contador */
+}
+
+
+
+.cores {
+    width: 80%;
+    border: 8px dashed color-mix(in srgb, orange 21%, blue 50%);
+    /* Essa confiuração define Utiliza color-mix para combinar cores: orange e blue, criando um mix que é 21% laranja e 50% azul. O resultado é uma cor intermediária que depende dessas proporções. */
+    /* A função color-mix(in srgb, ...) indica que o espaço de cor utilizado para a mistura é o SRGB. */
+    padding: 1em;
+    margin: 20px auto;
+}
+
+
+.cores:nth-of-type(3) {
+    /* .cores:nth-of-type(3): Seleciona o terceiro elemento com a classe .cores entre elementos do mesmo tipo (por exemplo, <div>, <span>, etc.). */
+    background-color: red;
+    background-clip: content-box
+        /* background-clip: content-box;: Define que a cor de fundo se aplica apenas à área de conteúdo do elemento, e não se estende para o padding (preenchimento) ou border (borda). */
+
+}
+
+
+
+
+.cores:nth-of-type(6) {
+    background-color: hsl(60deg, 100%, 50%, .3);
+    /* background-color: hsl(60deg, 100%, 50%, .3);: Define a cor de fundo do elemento usando o modelo de cores HSL com opacidade. No caso, hsl(60deg, 100%, 50%, .3) define um tom amarelo com 30% de opacidade. */
+    background-clip: padding-box;
+    box-shadow: 0 15px 6px -7px hsl(100deg, 100%, 50%) inset;
+}
+
+
+
+
+.cores:nth-of-type(1):hover {
+    background-color: hsl(50deg, 100%, 48%);
+    /* background-color: hsl(50deg, 100%, 48%): Define a cor de fundo como um tom de amarelo usando a notação HSL (Hue, Saturation, Lightness), com: 50 graus de matiz (um amarelo), 100% de saturação (cor pura), 48% de luminosidade. */
+}
+
+
+
+.cores:nth-of-type(2) {
+    background-image: linear-gradient(70deg, blue, transparent), linear-gradient(to top, red, transparent);
+    /* A primeira imagem de fundo é um gradiente linear em 70 graus, que começa em azul e se torna transparente.
+    A segunda imagem de fundo é outro gradiente linear que vai do vermelho ao transparente na direção "to top" (de baixo para cima). */
+    background-clip: content-box, padding-box;
+    /* background-clip: content-box, padding-box;: Define a área onde o fundo será exibido.
+    content-box: A primeira imagem de fundo (o gradiente azul) é aplicada apenas na área de conteúdo do elemento.
+    padding-box: A segunda imagem de fundo (o gradiente vermelho) cobre a área de conteúdo e a área de padding, mas não se estende para a borda. */
 }

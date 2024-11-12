@@ -85,3 +85,127 @@ seciton {
     content-box: A primeira imagem de fundo (o gradiente azul) é aplicada apenas na área de conteúdo do elemento.
     padding-box: A segunda imagem de fundo (o gradiente vermelho) cobre a área de conteúdo e a área de padding, mas não se estende para a borda. */
 }
+
+
+
+
+.cores:nth-of-type(3) {
+    background-image: radial-gradient(blue, yellow 85%, green);
+}
+
+
+
+
+
+.cores:nth-of-type(4) {
+    background-image: radial-gradient(at right, purple, orange);
+    /* Essa configuração define em mudar de posição o radial gradiente de um lado para o outro */
+}
+
+
+
+.cores:nth-of-type(5) {
+    background-image: radial-gradient(closest-corner at 50px 20px, blue, red);
+    /* closest-corner at 50px 20px: Define o ponto de origem do gradiente em uma posição específica dentro do elemento  (neste caso, 50px da esquerda e 20px do topo). A opção closest-corner faz com que o gradiente se expanda até a borda mais próxima do contêiner. blue, red: Especifica as cores do gradiente, indo do azul no centro ao vermelho nas bordas. */
+
+
+}
+
+
+
+.cores:nth-of-type(6) {
+    background-image: radial-gradient(farthest-corner at 50px 20px, blue, red);
+    /* farthest-corner: indica que o gradiente se expande até o canto mais distante do ponto de origem, garantindo que ele cubra a maior área possível do elemento. */
+
+
+}
+
+
+
+
+.cores:nth-of-type(7) {
+    background-image: radial-gradient(closest-side at 50px 20px, blue, red);
+    /* Essa configuração define em expandir o radial para o lado mas perto */
+
+}
+
+
+
+.cores:nth-of-type(8) {
+    background-image: radial-gradient(farthest-side at 50px 20px, blue, red);
+    /* Essa configuração define em expandir o radical para o lado mas longe */
+}
+
+
+
+
+.cores:nth-of-type(9) {
+    background-image: radial-gradient(circle farthest-side at 50px 20px, blue, orange), radial-gradient(circle farthest-corner at top right, green, transparent);
+
+
+}
+
+
+
+
+.cores:nth-of-type(10) {
+    background-image: radial-gradient(circle farthest-side at 50px 20px, blue, orange), radial-gradient(circle farthest-corner at top right, green, transparent);
+    /* rimeiro radial-gradient(circle farthest-side at 50px 20px, blue, orange)
+    radial-gradient cria um gradiente circular.
+    circle farthest-side especifica que o gradiente terá forma circular e irá até a borda mais afastada em relação ao ponto inicial. at 50px 20px define o ponto de início do gradiente, com uma posição de 50px do lado esquerdo e 20px do topo.
+    blue, orange define a transição de cores no gradiente, indo de azul para laranja.
+    Segundo radial-gradient(circle farthest-corner at top right, green, transparent)
+    Outro radial-gradient sobreposto ao primeiro. circle farthest-corner cria um gradiente circular que vai até o canto mais distante em relação ao ponto inicial. at top right define que o ponto inicial do gradiente está no canto superior direito do elemento. green, transparent define uma transição de verde para transparente. */
+}
+
+
+
+
+.cores:nth-of-type(11) {
+    background-image: conic-gradient(from 45deg, red 20%, green 1%, blue 35%);
+    /* background-image: conic-gradient(...): Isso define o fundo do elemento como um gradiente cônico. O gradiente cônico cria uma transição de cores ao redor de um ponto central, formando um efeito de "arco-íris" circular. from 45deg: Define o ângulo inicial do gradiente, ou seja, onde ele começa. Nesse caso, 45 graus em relação ao topo do elemento. Isso inclina o início do gradiente e altera a disposição das cores ao redor do ponto central.
+    red, green, blue: Especifica as cores do gradiente. Aqui, o gradiente faz uma transição suave entre vermelho, verde e azul, criando um efeito visual onde as cores se fundem de maneira circular em torno do ponto central. */
+}
+
+
+
+.cores:nth-of-type(12) {
+    background-image: conic-gradient(#f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00);
+    /* Circulo cromatico */
+    transition: filter 5s linear;
+    aspect-ratio: 19 / 9;
+    /* transition: filter 5s linear;:
+    Define uma transição suave de 5 segundos para qualquer mudança aplicada ao filtro (filter). Isso significa que, se algum filtro for alterado dinamicamente (como filter: brightness() ou filter: blur()), a transição será linear e durará 5 segundos.
+    aspect-ratio: 19 / 9;:
+    Define a proporção de aspecto do elemento para 19:9, que é uma proporção ligeiramente mais larga que 16:9, típica de vídeos ou apresentações em tela panorâmica.*/
+
+}
+
+
+.cores:nth-of-type(12):hover {
+    filter: hue-rotate(360deg);
+    /* filter: hue-rotate(360deg);: Aplica um filtro de rotação de matiz (cor) ao elemento. O valor 360deg faz com que as cores do elemento façam uma rotação completa */
+
+}
+
+
+
+.cores:nth-of-type(13) {
+    background-image: linear-gradient(to top right, transparent 50%, red 50%);
+    box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.8);
+}
+
+
+
+.cores:nth-of-type(14) {
+    background-image: linear-gradient(to top right, transparent 50%, red 50%);
+    filter: drop-shadow(4px 4px 3px rgba(0, 0, 0, .8));
+    /* Cria um gradiente linear que vai do canto inferior esquerdo (to top right) ao canto superior direito.
+   A metade inferior da área tem um fundo transparente (transparent 50%) e a metade superior é preenchida com a cor vermelha (red 50%).
+   Esse gradiente cria um efeito diagonal que divide a área do fundo em duas cores: transparente na metade inferior esquerda e vermelho na metade superior direita.
+   filter: drop-shadow(4px 4px 3px rgba(0, 0, 0, .8)):
+
+   Aplica uma sombra de projeção no elemento.
+   A sombra tem um deslocamento de 4px tanto na horizontal quanto na vertical, com um desfoque de 3px.
+   A cor da sombra é preta com 80% de opacidade (rgba(0, 0, 0, .8)), criando uma sombra relativamente escura e destacada ao redor do elemento. */
+}

@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #FADAEB;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 30em;
+}
+
+
+
+h1 {
+    font-weight: lighter;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 1em;
+    color: #FF1493; 
+}
+
+
+
+.cards-title {
+    padding-bottom: 1em;
+    text-transform: capitalize;
+    font-size: 1.2em;
+    color: #7B68EE;
+    font-weight: lighter;
+
+}
+
+
+
+p {
+    color: #A020F0;
+
+}
+
+
+
+
+section.card {
+    display: flex;
+    /* Define o elemento como um contêiner flexível, permitindo que os itens filhos sejam dispostos em linha ou em coluna de forma flexível. */
+    flex-wrap: wrap;
+    /* Permite que os itens filhos "quebrem" para a próxima linha caso não caibam na largura do contêiner. Isso é útil para layouts responsivos. */
+    gap: 30px;
+    /* Define um espaçamento uniforme de 30px entre os itens filhos (horizontal e vertical). */
+    width: 80%;
+    /* Define a largura do contêiner como 80% do elemento pai. */
+    margin: 60px auto;
+    /* Aplica um espaçamento de 60px na parte superior e inferior, e centraliza horizontalmente o contêiner usando auto nas margens laterais. */
+}
+
+
+
+.row {
+    flex-basis: calc(26% - 30px);
+    /* Define o tamanho inicial do elemento dentro de um contêiner flexível.
+    Neste caso, o tamanho inicial será 26% da largura do contêiner, menos 30px de gap.
+    Isso permite ajustar o tamanho do elemento dinamicamente com base no espaço disponível. */
+    flex-grow: 1;
+    /* Determina o quanto o elemento pode crescer em relação aos outros itens flexíveis.
+    Com o valor 1, esse elemento poderá crescer para ocupar o espaço disponível, dividindo-o proporcionalmente com outros elementos no mesmo contêiner flexível. */
+    background-image: linear-gradient(135deg, transparent 20px, white 20px);
+    position: relative;
+    filter: drop-shadow(0 0 3px black);
+    padding: 2em;
+}
+
+
+
+.row::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(135deg, transparent 20px, #FF69B4 20px);
+    filter: drop-shadow(2px 2px 4px rgb(0, 0, 0, .3));
+
+}

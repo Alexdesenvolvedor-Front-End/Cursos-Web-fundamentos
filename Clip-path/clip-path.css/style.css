@@ -1,0 +1,62 @@
+body {
+    background-color: brown;
+
+}
+
+
+.clip-path>div {
+    width: 300px;
+    height: 300px;
+    background-image: repeating-linear-gradient(45deg, yellow 10%, orange 20%);
+    margin: 1.5em;
+}
+
+
+
+#d1 {
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+    /* Essa configuração define (0% 0%): O canto superior esquerdo do elemento. (100% 0%): O canto superior direito do elemento. (0% 100%): O canto inferior esquerdo do elemento. */
+}
+
+
+#d2 {
+    clip-path: circle(40% at center);
+    /* Define um círculo como a forma de recorte.
+    O valor 40% indica o raio do círculo. É relativo ao menor entre a largura ou a altura do elemento.
+    Ou seja, o círculo terá 40% do tamanho do menor lado do elemento (para garantir que seja um círculo perfeito).
+    at center: Especifica o centro do círculo como o ponto de origem.  center significa que o círculo estará centralizado no elemento. */
+}
+
+
+
+#d3 {
+    clip-path: ellipse(50% 20px);
+    /* Define a forma do recorte como uma elipse.
+    50% Largura do raio horizontal da elipse (em relação à largura do elemento). 20px Altura do raio vertical da elipse (valor fixo em pixels). */
+}
+
+
+
+#d4 {
+    clip-path: inset(10% 20% 30% 40%);
+    /* O formato de inset é: inset(top right bottom left), e cada valor é uma porcentagem ou valor absoluto, que define o quanto do elemento será "cortado" a partir de cada borda:
+    10%: A distância do recorte na borda superior (topo).
+    20%: A distância do recorte na borda direita.
+    30%: A distância do recorte na borda inferior.
+    40%: A distância do recorte na borda esquerda. */
+
+}
+
+
+
+#d5 {
+    clip-path: inset(30px round 20px 10%);
+    /* Essa configuração define inset(30px): Isso cria um recorte em forma de retângulo, onde o valor 30px indica que o recorte será feito de fora para dentro, removendo 30 pixels de cada borda (superior, inferior, esquerda e direita) do elemento. Ou seja, o conteúdo do elemento será "reduzido" em 30px de todas as bordas. round 20px 10%: Essa parte adiciona bordas arredondadas ao recorte. O valor 20px aplica um raio de arredondamento de 20 pixels nas bordas superior esquerda e inferior direita do retângulo, enquanto o valor 10% aplica um arredondamento de 10% nas bordas superior direita e inferior esquerda. */
+}
+
+
+
+#d6 {
+    clip-path: polygon(0% 0%, 100% 1%, 75% 64%, 1% 99%, 60% 39%);
+    /* Aqui eu usei um gerador para facilitar */
+}

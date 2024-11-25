@@ -1,0 +1,16 @@
+body {
+    color: red;
+    font-family: serif;
+}
+
+
+a::after {
+    content: "(" attr(href) ") - (" attr(title) ")";
+    display: inline-block;
+    margin-left: .5em;
+    /* content: "(" attr(href) ") - (" attr(title) ")";
+    content: Define o conteúdo que será exibido pelo pseudoelemento.
+    attr(href): Insere o valor do atributo href do elemento <a> (geralmente o endereço do link).
+    attr(title): Insere o valor do atributo title do elemento <a> (caso o atributo exista no HTML). */
+
+}

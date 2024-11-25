@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #9c9a9a;
+    color: green;
+}
+
+
+
+
+.teste{
+    width: 320px;
+    height: 80px;
+    background-color: darkgoldenrod;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+
+/*Media querie*/
+
+@media screen and (min-width: 600px) {
+    body {
+        background-color: lightpink;
+        color: #ffff;
+        h1 {
+            color: black;
+            background-color: #ffff;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 3em;
+            margin-bottom: 1em;
+        }
+    }
+}

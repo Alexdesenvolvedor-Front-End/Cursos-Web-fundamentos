@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,13 +6,13 @@
 
 
 
-body{
+body {
     background-color: lightslategray;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
-.cards-container{
+.cards-container {
     display: flex;
     flex-direction: column;
     gap: 1.5em;
@@ -21,7 +21,7 @@ body{
 
 
 
-.cards{
+.cards {
     background-color: #ffff;
     padding: 1.2em;
     border-radius: 5px;
@@ -29,6 +29,6 @@ body{
 
 
 
-h1{
+h1 {
     text-align: center;
 }

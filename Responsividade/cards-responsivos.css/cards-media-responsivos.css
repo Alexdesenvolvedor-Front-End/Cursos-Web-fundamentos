@@ -1,23 +1,24 @@
 @media screen and (min-width: 860px) {
-    body{
+    body {
         background-color: #9c9898;
     }
-    .cards-container{
+
+    .cards-container {
         flex-direction: row;
         margin: 1em;
     }
 
-    .cards{
+    .cards {
         border-radius: 5px;
-        box-shadow: 3px 3px 3px 1px rgb(0,0,0, .8);
+        box-shadow: 3px 3px 3px 1px rgb(0, 0, 0, .8);
     }
 
 
-    h2{
+    h2 {
         font-size: 1.3em;
     }
 
-    h1{
+    h1 {
         text-align: center;
     }
 

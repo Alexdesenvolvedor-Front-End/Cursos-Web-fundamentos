@@ -6,7 +6,7 @@
 
 
 :root {
-    --primary-color: #000080;
+    --primary-color: #0000FF;
 }
 
 
@@ -25,7 +25,7 @@ body {
 
 
 
-.top-header {
+.top_header {
     text-align: center;
 }
 
@@ -41,7 +41,7 @@ body {
 
 .top_header_nav ul {
     list-style-type: none;
-    padding: 0;
+
 }
 
 
@@ -51,6 +51,7 @@ body {
     color: #ffff;
     display: block;
     padding: 1em;
+
 }
 
 
@@ -64,10 +65,23 @@ body {
 
 
 
-.heroBanner{
+.heroBanner {
     text-align: center;
-    background-color:#0000FF;
+    background-color: #808080;
+    padding: 1em;
+
 }
+
+
+
+.heroBanner_iconPlay{
+   width: 5em;
+   height: 5em;
+   display: none;
+
+}
+
+
 
 
 
@@ -79,14 +93,17 @@ body {
 
 
 
-@media screen and (min-width: 59.4375em) {
-    .top-header {
+@media screen and (min-width: 50em) {
+
+    /* Esses 50em é equivalente a 800px */
+    .top_header {
         display: flex;
         justify-content: space-between;
     }
 
     .top_header_nav {
         background-color: transparent;
+
     }
 
 
@@ -97,6 +114,7 @@ body {
 
     .top_header_nav li {
         display: inline-block;
+        /* Defini essa configuração para por as li lado a lado */
 
     }
 

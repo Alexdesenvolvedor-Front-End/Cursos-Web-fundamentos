@@ -17,6 +17,15 @@ body {
 
 
 
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Federo", serif;
+}
+
+
+
 .maxwidth {
     max-width: 70.25em;
     margin: auto;
@@ -41,6 +50,7 @@ body {
 
 .top_header_nav ul {
     list-style-type: none;
+    margin-bottom: 0;
 
 }
 
@@ -57,8 +67,10 @@ body {
 
 
 
+
 .top_header_nav li:hover {
-    background-color: color-mix(in srgb, var(--primary-color), #ffff 15%)
+    background-color: color-mix(in srgb, var(--primary-color), #ffff 15%);
+
 }
 
 
@@ -67,18 +79,46 @@ body {
 
 .heroBanner {
     text-align: center;
-    background-color: #808080;
+    background-color: #f3ecec;
     padding: 1em;
+    margin-top: .5em;
 
 }
 
 
 
-.heroBanner_iconPlay{
-   width: 5em;
-   height: 5em;
-   display: none;
+.heroBanner_iconPlay {
+    width: 5em;
+    height: 5em;
+    display: none;
 
+}
+
+
+.heroBanner_title {
+    color: var(--primary-color);
+    font-size: 2em;
+    font-weight: 100;
+}
+
+
+
+.heroBanner_subtitle {
+    color: color-mix(in srgb, var(--primary-color), #ffff 35%);
+    font-size: 1.1em;
+    font-weight: 300;
+
+}
+
+
+.heroBanner_btn {
+    background-color: rgb(99, 185, 185);
+    display: inline-block;
+    padding: 1em 2em;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffff;
+    font-size: .9em;
 }
 
 
@@ -123,6 +163,75 @@ body {
 
 
     }
+
+    .heroBanner {
+        background-color: var(--primary-color);
+    }
+
+
+    .heroBanner_title,
+    .heroBanner_subtitle {
+        color: #ffff;
+
+    }
+
+
+    .heroBanner_subtitle {
+        text-align: justify;
+    }
+
+
+    .heroBanner_iconPlay {
+        display: block;
+        margin: auto;
+    }
+
+
+}
+
+
+
+@media screen and (min-width: 62.5em) {
+
+    /* Essa configuração em 62.5em define 1000px */
+    .heroBanner {
+        background-image: url(../images/bg_topo_1198x670.jpg);
+        aspect-ratio: 1198 / 670;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .heroBanner .maxwidth {
+        margin: 14em;
+        width: 70%;
+    }
+}
+
+
+@media screen and (min-width: 73.75em) {
+
+    /* Essa configuração em 73.75em define 1180px */
+    .heroBanner {
+        background-image: linear-gradient(transparent, var(--primary-color)), url(../images/bg_topo_1600x1374.jpg);
+        background-blend-mode: luminosity;
+        background-size: cover;
+        max-height: 85vh;
+        width: 100%;
+    }
+
+    .heroBanner .maxwidth {
+        width: 55%;
+        padding-top: 10em;
+    }
+
+
+    .heroBanner_iconPlay {
+        width: 7em;
+        height: 7em;
+    }
+
 
 
 }

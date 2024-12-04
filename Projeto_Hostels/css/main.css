@@ -29,6 +29,7 @@ h4 {
 .maxwidth {
     max-width: 70.25em;
     margin: auto;
+    /* Essa configuração define uma largura maxima no container e uma margim automatica para todos os lados */
 
 }
 
@@ -91,6 +92,7 @@ h4 {
     width: 5em;
     height: 5em;
     display: none;
+    /* Essa configuração define uma largura e uma altura para o icone */
 
 }
 
@@ -119,6 +121,7 @@ h4 {
     text-decoration: none;
     color: #ffff;
     font-size: .9em;
+
 }
 
 
@@ -154,7 +157,7 @@ h4 {
 
     .top_header_nav li {
         display: inline-block;
-        /* Defini essa configuração para por as li lado a lado */
+        /* Essa configuração define em colocar  as li uma ao lado da outra em linha */
 
     }
 
@@ -184,6 +187,7 @@ h4 {
     .heroBanner_iconPlay {
         display: block;
         margin: auto;
+        /* Essa configuração faz com que o icone deixe de ser display: none e passe para display: block, dessa forma ele volta aparecer na tela e o margin auto centraliza o icone em todos os lados */
     }
 
 
@@ -201,6 +205,11 @@ h4 {
         display: flex;
         justify-content: center;
         align-items: center;
+        /* background-image: Define a imagem de fundo.
+           aspect-ratio: Mantém a proporção da imagem (1198x670).
+           display: flex: Define o layout como flexbox.
+           justify-content: center: Centraliza horizontalmente.
+           align-items: center: Centraliza verticalmente. */
     }
 
 
@@ -220,19 +229,29 @@ h4 {
         background-size: cover;
         max-height: 85vh;
         width: 100%;
+        /* Background: Combinação de gradient linear transparente e imagem (bg_topo_1600x1374.jpg).
+          Cor de fundo: Utiliza variável CSS --primary-color.
+          Mistura de cores: background-blend-mode: luminosity cria efeito de iluminação.
+          Tamanho de fundo: background-size: cover ajusta a imagem ao container.
+          Altura máxima: max-height: 85vh define altura relativa à tela.
+          Largura: width: 100% ocupa toda a largura disponível. */
     }
 
     .heroBanner .maxwidth {
         width: 55%;
+        /* width: 55%: Define a largura do elemento como 55% da largura do pai (.heroBanner). */
         padding-top: 10em;
+
+
     }
 
-
-    .heroBanner_iconPlay {
-        width: 7em;
-        height: 7em;
-    }
+}
 
 
 
+
+.heroBanner_iconPlay {
+    width: 7em;
+    height: 7em;
+    /* Essa configuração define uma lagura e altura para o icone */
 }

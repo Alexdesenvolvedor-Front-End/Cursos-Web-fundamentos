@@ -1,3 +1,7 @@
+
+
+
+
 * {
     padding: 0;
     box-sizing: border-box;
@@ -41,12 +45,9 @@ h4 {
 
 
 
-
 .top_header_nav {
     background-color: var(--primary-color);
 }
-
-
 
 
 .top_header_nav ul {
@@ -54,7 +55,6 @@ h4 {
     margin-bottom: 0;
 
 }
-
 
 
 .top_header_nav a {
@@ -66,16 +66,10 @@ h4 {
 }
 
 
-
-
-
 .top_header_nav li:hover {
     background-color: color-mix(in srgb, var(--primary-color), #ffff 15%);
 
 }
-
-
-
 
 
 .heroBanner {
@@ -125,6 +119,66 @@ h4 {
 }
 
 
+.middeleContent {
+    background-color: #f3ecec;
+    text-align: center;
+
+}
+
+
+
+.middeleContent p {
+    line-height: 1.2;
+    font-size: .9em;
+}
+
+
+
+.middleContent_title {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 1.25em;
+}
+
+
+
+.middeleContent span[class^="icon-"] {
+    color: var(--primary-color);
+    font-size: 3em;
+}
+
+
+.middeleContent a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+/* min-width: 0 -- col-sm
+   min-width: 62.5em -- col-md 
+   min-width: 73.75em -- col-lg
+   min-width: min-width: 74em -- col-xl*/
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+
+}
+
+
+.col {
+    flex: 1 0 auto;
+    width: 100%;
+ 
+}
+
+
+.col-sm-12{
+    width: 100%;
+}
 
 
 
@@ -189,9 +243,9 @@ h4 {
         margin: auto;
         /* Essa configuração faz com que o icone deixe de ser display: none e passe para display: block, dessa forma ele volta aparecer na tela e o margin auto centraliza o icone em todos os lados */
     }
-
-
 }
+
+
 
 
 
@@ -216,6 +270,8 @@ h4 {
     .heroBanner .maxwidth {
         margin: 14em;
         width: 70%;
+        /* Essa configuração width: 70%;
+        Define que a largura do elemento será 70% da largura do seu elemento pai. */
     }
 }
 
@@ -248,10 +304,16 @@ h4 {
 }
 
 
-
-
 .heroBanner_iconPlay {
     width: 7em;
     height: 7em;
     /* Essa configuração define uma lagura e altura para o icone */
+}
+
+
+
+@media screen and (min-width: 65.5em){
+    .col-md-6{
+        width: calc(50% - 1em)
+    }
 }

@@ -196,6 +196,7 @@ h4 {
     /* Essa configuração em 62.5em define 1000px */
     .heroBanner {
         background-image: url(../images/bg_topo_1198x670.jpg);
+        background-size: cover;
         aspect-ratio: 1198 / 670;
         display: flex;
         justify-content: center;

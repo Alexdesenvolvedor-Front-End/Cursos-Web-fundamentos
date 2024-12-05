@@ -1,16 +1,14 @@
-
-
-
-
 * {
+    border: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 
-
 :root {
-    --primary-color: #0000FF;
+    --first--color: #6A5ACD;
+    --second--color: #ffff;
+
 }
 
 
@@ -21,20 +19,8 @@ body {
 
 
 
-h1,
-h2,
-h3,
-h4 {
-    font-family: "Federo", serif;
-}
-
-
-
-.maxwidth {
+.maxWidth {
     max-width: 70.25em;
-    margin: auto;
-    /* Essa configuração define uma largura maxima no container e uma margim automatica para todos os lados */
-
 }
 
 
@@ -46,274 +32,62 @@ h4 {
 
 
 .top_header_nav {
-    background-color: var(--primary-color);
+    background-color: var(--first--color);
 }
 
 
 .top_header_nav ul {
     list-style-type: none;
-    margin-bottom: 0;
-
 }
 
 
 .top_header_nav a {
     text-decoration: none;
-    color: #ffff;
+    color: var(--second--color);
     display: block;
     padding: 1em;
-
 }
 
 
 .top_header_nav li:hover {
-    background-color: color-mix(in srgb, var(--primary-color), #ffff 15%);
-
-}
-
-
-.heroBanner {
-    text-align: center;
-    background-color: #f3ecec;
-    padding: 1em;
-    margin-top: .5em;
+    background-color: color-mix(in srgb, var(--first--color), var(--second--color) 10%);
 
 }
 
 
 
-.heroBanner_iconPlay {
-    width: 5em;
-    height: 5em;
-    display: none;
-    /* Essa configuração define uma largura e uma altura para o icone */
-
-}
-
-
-.heroBanner_title {
-    color: var(--primary-color);
-    font-size: 2em;
-    font-weight: 100;
-}
-
-
-
-.heroBanner_subtitle {
-    color: color-mix(in srgb, var(--primary-color), #ffff 35%);
-    font-size: 1.1em;
-    font-weight: 300;
-
-}
-
-
-.heroBanner_btn {
-    background-color: rgb(99, 185, 185);
-    display: inline-block;
-    padding: 1em 2em;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #ffff;
-    font-size: .9em;
-
-}
-
-
-.middeleContent {
-    background-color: #f3ecec;
-    text-align: center;
-
-}
-
-
-
-.middeleContent p {
-    line-height: 1.2;
-    font-size: .9em;
-}
-
-
-
-.middleContent_title {
-    color: var(--primary-color);
-    text-transform: uppercase;
-    font-size: 1.25em;
-}
-
-
-
-.middeleContent span[class^="icon-"] {
-    color: var(--primary-color);
-    font-size: 3em;
-}
-
-
-.middeleContent a {
-    color: inherit;
-    text-decoration: none;
-}
-
-
-
-/* min-width: 0 -- col-sm
-   min-width: 62.5em -- col-md 
-   min-width: 73.75em -- col-lg
-   min-width: min-width: 74em -- col-xl*/
-
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-
-}
-
-
-.col {
-    flex: 1 0 auto;
-    width: 100%;
- 
-}
-
-
-.col-sm-12{
-    width: 100%;
-}
-
-
-
-
-/* ---------------------------------------------------------------------------------------------------------------- */
 
 /* Media queries */
 
 
-
-
 @media screen and (min-width: 50em) {
-
-    /* Esses 50em é equivalente a 800px */
     .top_header {
         display: flex;
         justify-content: space-between;
+        margin: auto;
+
     }
 
-    .top_header_nav {
-        background-color: transparent;
 
+    .top_header_nav li {
+        display: inline-block;
     }
 
 
     .top_header_nav a {
-        color: #9400D3;
-
+        color: #000000;
+        text-transform: uppercase;
     }
 
-    .top_header_nav li {
-        display: inline-block;
-        /* Essa configuração define em colocar  as li uma ao lado da outra em linha */
-
-    }
 
     .top_header_nav a:hover {
-        background-color: color-mix(in srgb, var(--primary-color), #ffff 91%);
-
-
-    }
-
-    .heroBanner {
-        background-color: var(--primary-color);
+        background-color:  #ccc6f7;
+        transition: all;
     }
 
 
-    .heroBanner_title,
-    .heroBanner_subtitle {
-        color: #ffff;
-
-    }
-
-
-    .heroBanner_subtitle {
-        text-align: justify;
-    }
-
-
-    .heroBanner_iconPlay {
-        display: block;
-        margin: auto;
-        /* Essa configuração faz com que o icone deixe de ser display: none e passe para display: block, dessa forma ele volta aparecer na tela e o margin auto centraliza o icone em todos os lados */
-    }
-}
-
-
-
-
-
-@media screen and (min-width: 62.5em) {
-
-    /* Essa configuração em 62.5em define 1000px */
-    .heroBanner {
-        background-image: url(../images/bg_topo_1198x670.jpg);
-        background-size: cover;
-        aspect-ratio: 1198 / 670;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* background-image: Define a imagem de fundo.
-           aspect-ratio: Mantém a proporção da imagem (1198x670).
-           display: flex: Define o layout como flexbox.
-           justify-content: center: Centraliza horizontalmente.
-           align-items: center: Centraliza verticalmente. */
-    }
-
-
-    .heroBanner .maxwidth {
-        margin: 14em;
-        width: 70%;
-        /* Essa configuração width: 70%;
-        Define que a largura do elemento será 70% da largura do seu elemento pai. */
-    }
-}
-
-
-@media screen and (min-width: 73.75em) {
-
-    /* Essa configuração em 73.75em define 1180px */
-    .heroBanner {
-        background-image: linear-gradient(transparent, var(--primary-color)), url(../images/bg_topo_1600x1374.jpg);
-        background-blend-mode: luminosity;
-        background-size: cover;
-        max-height: 85vh;
-        width: 100%;
-        /* Background: Combinação de gradient linear transparente e imagem (bg_topo_1600x1374.jpg).
-          Cor de fundo: Utiliza variável CSS --primary-color.
-          Mistura de cores: background-blend-mode: luminosity cria efeito de iluminação.
-          Tamanho de fundo: background-size: cover ajusta a imagem ao container.
-          Altura máxima: max-height: 85vh define altura relativa à tela.
-          Largura: width: 100% ocupa toda a largura disponível. */
-    }
-
-    .heroBanner .maxwidth {
-        width: 55%;
-        /* width: 55%: Define a largura do elemento como 55% da largura do pai (.heroBanner). */
-        padding-top: 10em;
-
-
-    }
-
-}
-
-
-.heroBanner_iconPlay {
-    width: 7em;
-    height: 7em;
-    /* Essa configuração define uma lagura e altura para o icone */
-}
-
-
-
-@media screen and (min-width: 65.5em){
-    .col-md-6{
-        width: calc(50% - 1em)
+    .top_header_nav {
+        background-color: initial;
+        /* Essa configuração reseta ao valor padrão do css que é o background-color: transparent */
     }
 }

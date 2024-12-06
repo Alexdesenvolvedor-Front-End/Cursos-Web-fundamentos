@@ -38,6 +38,8 @@ body {
 
 .top_header_nav ul {
     list-style-type: none;
+    margin-bottom: 0;
+    
 }
 
 
@@ -53,6 +55,25 @@ body {
     background-color: color-mix(in srgb, var(--first--color), var(--second--color) 10%);
 
 }
+
+
+.heroBanner {
+    text-align: center;
+    background-color: rgb(213, 215, 216);
+    padding: 1em;
+}
+
+
+
+.heroBanner_iconPlay {
+    width: 5em;
+    height: 5em;
+    display: none;
+    /* Essa configuração define a largura e altura do container com 80px */
+
+}
+
+
 
 
 
@@ -76,13 +97,14 @@ body {
 
     .top_header_nav a {
         color: #000000;
-        text-transform: uppercase;
+
     }
 
 
     .top_header_nav a:hover {
         background-color: #ccc6f7;
-        
+        transition: 2s ease-in-out;
+
     }
 
 

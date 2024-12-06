@@ -1,5 +1,5 @@
 * {
-    border: 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -15,6 +15,7 @@
 
 body {
     font-family: sans-serif;
+
 }
 
 
@@ -38,8 +39,10 @@ body {
 
 .top_header_nav ul {
     list-style-type: none;
-    margin-bottom: 0;
-    
+
+
+
+
 }
 
 
@@ -60,7 +63,8 @@ body {
 .heroBanner {
     text-align: center;
     background-color: rgb(213, 215, 216);
-    padding: 1em;
+    padding: 1.5em;
+
 }
 
 
@@ -71,7 +75,44 @@ body {
     display: none;
     /* Essa configuração define a largura e altura do container com 80px */
 
+
+
 }
+
+
+
+.heroBanner_title {
+    color: var(--first--color);
+    font-family: "Playfair Display SC", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+
+
+.heroBanner_subtitle {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    color: #9370DB;
+    text-align: left;
+    line-height: 1.3em;
+}
+
+
+.heroBanner_btn {
+    display: inline-block;
+    background-color: rgb(130, 161, 161);
+    padding: .80em 1.5em;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #ffff;
+    margin-top: 1.2em;
+
+}
+
 
 
 
@@ -112,4 +153,48 @@ body {
         background-color: initial;
         /* Essa configuração reseta ao valor padrão do css que é o background-color: transparent */
     }
+
+
+    .heroBanner {
+        background-color: var(--first--color);
+        
+    }
+
+
+    .heroBanner_iconPlay {
+        display: block;
+        margin: auto;
+    }
+
+    .heroBanner_title {
+        color: #ccc;
+        padding-top: .5em;
+    }
+
+
+    .heroBanner_subtitle {
+        color: #ccc;
+
+    }
+
 }
+
+
+@media screen and (min-width: 62.5em) {
+    .heroBanner {
+        background-image: url(../images/bg_topo_1198x670.jpg);
+        aspect-ratio: 1198 / 670;
+        /* Essa configurrão faz com que o elemento aumente proporcionalmente */
+        display: flex;
+        /* justify-content: center; */
+        align-items: flex-end;
+    }
+
+    .heroBanner .maxWidth{
+        width: 80%;
+       
+   
+       
+    }
+
+ 

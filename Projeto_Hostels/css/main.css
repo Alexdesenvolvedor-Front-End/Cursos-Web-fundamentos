@@ -8,6 +8,7 @@
 :root {
     --first--color: #6A5ACD;
     --second--color: #ffff;
+    --default--gap: .9em;
 
 }
 
@@ -240,9 +241,7 @@ body {
 .middeleContent {
     background-color: rgb(213, 215, 216);
     text-align: center;
-
-
-
+    padding: 1.5em;
 }
 
 
@@ -257,14 +256,13 @@ body {
 .middleContent_title {
     color: var(--first--color);
     text-transform: uppercase;
-    font-size: 1em;
-
-
-
+    font-size: 1.2em;
 }
 
 
 .middeleContent span[class^="icon-"] {
+    /* span: Seleciona os elementos "span" dentro de .middleContent.
+    [class^="icon-"]: Seleciona elementos com classes que começam com "icon-" */
     color: var(--first--color);
     font-size: 3.5em;
 }
@@ -275,7 +273,9 @@ body {
 }
 
 
+/* --------------------------------------------------------------------------------------------------------------- */
 
+/* GRID */
 
 /* min-width: 0 - col - SMALL
 min-width: 50em - col-MD
@@ -285,33 +285,5 @@ min-width: 70.625em - col - XL
 
 
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: .5em;
-
-}
 
 
-
-.col {
-    flex: 1 0 auto;
-    /* Essa configuração define que flex-grow 1 se estiver espaço sobrando sempre vai creser, 0 nunca vai diminuir e auto ele vai crescer mas vai depender do prorpio elemento */
-    width: 100%;
-    /* Essa configuração define por padrão uma largura de 100% na colula */
-}
-
-
-.col-sm-12 {
-    width: 100%;
-    /* Essa configuração define por padrão uma largura de 100% na colula */
-}
-
-
-
-@media screen and (min-width: 50em) {
-    .col-md-6 {
-        width: calc(50% - .9em);
-
-    }
-}

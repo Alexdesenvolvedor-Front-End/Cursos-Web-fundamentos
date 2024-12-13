@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    /* margin: 0; */
     padding: 0;
     box-sizing: border-box;
 }
@@ -22,6 +22,7 @@ body {
 
 .maxWidth {
     max-width: 70.25em;
+    /* 70.25em corresponde a 1124px */
 }
 
 
@@ -34,6 +35,7 @@ body {
 
 .top_header_nav {
     background-color: var(--first--color);
+    padding: .5em;
 }
 
 
@@ -97,7 +99,6 @@ body {
     font-size: 1.1em;
     font-weight: 300;
     color: #9370DB;
-    text-align: left;
     line-height: 1.3em;
 }
 
@@ -121,8 +122,10 @@ body {
 
 /* Media queries */
 
-
+/* MD */
 @media screen and (min-width: 50em) {
+
+    /* 50em corresponde a 800px */
     .top_header {
         display: flex;
         justify-content: space-between;
@@ -145,6 +148,7 @@ body {
     .top_header_nav a:hover {
         background-color: #ccc6f7;
         transition: 2s ease-in-out;
+        /* Essa configuração tranition define a transição , 2 segundos define a duração da transição, ease-in-out define aceleração e desaceleração suave. */
 
     }
 
@@ -157,13 +161,19 @@ body {
 
     .heroBanner {
         background-color: var(--first--color);
-        
+
     }
 
 
     .heroBanner_iconPlay {
         display: block;
         margin: auto;
+    }
+
+
+    .heroBanner_iconPlay img {
+        width: 3em;
+        height: 3em;
     }
 
     .heroBanner_title {
@@ -179,22 +189,129 @@ body {
 
 }
 
-
+/* LG */
 @media screen and (min-width: 62.5em) {
+
+    /* 65.5em corresponde a 1000px */
     .heroBanner {
         background-image: url(../images/bg_topo_1198x670.jpg);
         aspect-ratio: 1198 / 670;
-        /* Essa configurrão faz com que o elemento aumente proporcionalmente */
+        /* Essa configuração faz com que o elemento aumente proporcionalmente ao tamanho da imagem */
         display: flex;
-        /* justify-content: center; */
+        justify-content: center;
         align-items: flex-end;
     }
 
-    .heroBanner .maxWidth{
-        width: 80%;
-       
-   
-       
+
+
+    .heroBanner_iconPlay img {
+        width: 4em;
+        height: 5em;
     }
 
- 
+
+}
+
+
+
+/* XL */
+@media screen and (min-width: 70.625em) {
+
+    /* 70.625em corresponde a 1130px */
+    .heroBanner {
+        background-image: linear-gradient(transparent, var(--first--color)), url(../images/bg_topo_1600x1374.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: luminosity;
+        height: 80vh;
+        /* height 80vh define uma altura de 80% da viewport*/
+        width: 100%;
+        /* width 100% força a imagem se completada na larugra em 100% */
+    }
+
+
+    .heroBanner_iconPlay img {
+        width: 5em;
+        height: 5em;
+    }
+}
+
+
+.middeleContent {
+    background-color: rgb(213, 215, 216);
+    text-align: center;
+
+
+
+}
+
+
+
+.middeleContent a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+.middleContent_title {
+    color: var(--first--color);
+    text-transform: uppercase;
+    font-size: 1em;
+
+
+
+}
+
+
+.middeleContent span[class^="icon-"] {
+    color: var(--first--color);
+    font-size: 3.5em;
+}
+
+
+.middeleContent p {
+    line-height: 1.3em;
+}
+
+
+
+
+/* min-width: 0 - col - SMALL
+min-width: 50em - col-MD
+min-width: 62.5em - col-LG
+min-width: 70.625em - col - XL 
+*/
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5em;
+
+}
+
+
+
+.col {
+    flex: 1 0 auto;
+    /* Essa configuração define que flex-grow 1 se estiver espaço sobrando sempre vai creser, 0 nunca vai diminuir e auto ele vai crescer mas vai depender do prorpio elemento */
+    width: 100%;
+    /* Essa configuração define por padrão uma largura de 100% na colula */
+}
+
+
+.col-sm-12 {
+    width: 100%;
+    /* Essa configuração define por padrão uma largura de 100% na colula */
+}
+
+
+
+@media screen and (min-width: 50em) {
+    .col-md-6 {
+        width: calc(50% - .9em);
+
+    }
+}

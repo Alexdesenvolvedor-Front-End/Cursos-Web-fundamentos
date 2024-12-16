@@ -24,12 +24,14 @@ body {
 .maxWidth {
     max-width: 70.25em;
     /* 70.25em corresponde a 1124px */
+
 }
 
 
 
 .top_header {
     text-align: center;
+    /* Aqui centralizei todo meu header */
 }
 
 
@@ -37,15 +39,13 @@ body {
 .top_header_nav {
     background-color: var(--first--color);
     padding: .5em;
+    /* Aqui apliquei uma cor de fundo na nav, e dei um espaço interno dentro da nav */
 }
 
 
 .top_header_nav ul {
     list-style-type: none;
-
-
-
-
+    /* Aqui tirei os bullet da ul */
 }
 
 
@@ -77,9 +77,6 @@ body {
     height: 5em;
     display: none;
     /* Essa configuração define a largura e altura do container com 80px */
-
-
-
 }
 
 
@@ -90,7 +87,7 @@ body {
     font-weight: 500;
     font-style: normal;
     font-size: 1.5em;
-    margin-bottom: 1em;
+    padding: 1em;
 }
 
 
@@ -117,13 +114,9 @@ body {
 
 
 
-
-
-
-
 /* Media queries */
 
-/* MD */
+
 @media screen and (min-width: 50em) {
 
     /* 50em corresponde a 800px */
@@ -131,20 +124,17 @@ body {
         display: flex;
         justify-content: space-between;
         margin: auto;
-
     }
-
 
     .top_header_nav li {
         display: inline-block;
+        /* Aqui apliquei um display: inline-block para por as li uma ao lado da outra em linha */
     }
-
 
     .top_header_nav a {
         color: #000000;
 
     }
-
 
     .top_header_nav a:hover {
         background-color: #ccc6f7;
@@ -162,128 +152,59 @@ body {
 
     .heroBanner {
         background-color: var(--first--color);
-
     }
-
 
     .heroBanner_iconPlay {
         display: block;
         margin: auto;
-    }
-
-
-    .heroBanner_iconPlay img {
-        width: 3em;
-        height: 3em;
+        /* Essa configuração com o display: block faz com que a imagem icon saia do display: none e volte aparecer. */
     }
 
     .heroBanner_title {
-        color: #ccc;
-        padding-top: .5em;
+        color: #ddd;
     }
 
 
     .heroBanner_subtitle {
-        color: #ccc;
-
+        color: #ddd;
     }
-
 }
 
-/* LG */
-@media screen and (min-width: 62.5em) {
 
-    /* 65.5em corresponde a 1000px */
+@media screen and (min-width: 56.25em) {
+
+    /* 56.25em corresponde a 900px */
     .heroBanner {
         background-image: url(../images/bg_topo_1198x670.jpg);
         aspect-ratio: 1198 / 670;
-        /* Essa configuração faz com que o elemento aumente proporcionalmente ao tamanho da imagem */
+        /* Essa configuração aspect-ratio faz com que o elemento aumente na mesma proporção */
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .heroBanner {
         display: flex;
         justify-content: center;
         align-items: flex-end;
+        /* Toda essa configuração foi para centralizar o heroBanner e descer mas como o elemento  */
+
+    }
+
+    .heroBanner .maxWidth {
+        width: 70%;
+        /* Essa confiuração diminui em 70% o container maxWidth */
+
     }
 
 
-
-    .heroBanner_iconPlay img {
-        width: 4em;
-        height: 5em;
-    }
-
-
 }
 
 
 
-/* XL */
-@media screen and (min-width: 70.625em) {
+@media screen and (min-width: 71.875em){
+    /* 71.875em correnponde a 1185px */
+    .heroBanner{
+        background-image: url(../images/bg_topo_1600x1374.jpg);
 
-    /* 70.625em corresponde a 1130px */
-    .heroBanner {
-        background-image: linear-gradient(transparent, var(--first--color)), url(../images/bg_topo_1600x1374.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-blend-mode: luminosity;
-        height: 80vh;
-        /* height 80vh define uma altura de 80% da viewport*/
-        width: 100%;
-        /* width 100% força a imagem se completada na larugra em 100% */
-    }
-
-
-    .heroBanner_iconPlay img {
-        width: 5em;
-        height: 5em;
     }
 }
-
-
-.middeleContent {
-    background-color: rgb(213, 215, 216);
-    text-align: center;
-    padding: 1.5em;
-}
-
-
-
-.middeleContent a {
-    text-decoration: none;
-    color: inherit;
-}
-
-
-
-.middleContent_title {
-    color: var(--first--color);
-    text-transform: uppercase;
-    font-size: 1.2em;
-}
-
-
-.middeleContent span[class^="icon-"] {
-    /* span: Seleciona os elementos "span" dentro de .middleContent.
-    [class^="icon-"]: Seleciona elementos com classes que começam com "icon-" */
-    color: var(--first--color);
-    font-size: 3.5em;
-}
-
-
-.middeleContent p {
-    line-height: 1.3em;
-}
-
-
-/* --------------------------------------------------------------------------------------------------------------- */
-
-/* GRID */
-
-/* min-width: 0 - col - SMALL
-min-width: 50em - col-MD
-min-width: 62.5em - col-LG
-min-width: 70.625em - col - XL 
-*/
-
-
-
-
-

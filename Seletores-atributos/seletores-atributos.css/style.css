@@ -8,7 +8,7 @@ A configuração a[href="#"] { opacity: .2; } serve para tornar os links que apo
 
 a[href^="http"] {
     color: red;
-    /* Seletro atributos de links
+    /* Seletor atributos de links
 A configuração a[href^="http"] no CSS é um seletor que aplica estilos a todos os links (<a>) que começam com "http". Isso significa que todos os links que apontam para URLs externas (como http:// ou https://) terão a cor do texto definida como vermelha. */
 
 }

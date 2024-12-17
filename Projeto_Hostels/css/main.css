@@ -1,3 +1,6 @@
+/* CSS */
+
+
 * {
     /* margin: 0; */
     padding: 0;
@@ -8,7 +11,7 @@
 :root {
     --first--color: #6A5ACD;
     --second--color: #ffff;
-    --default--gap: .9em;
+    /* --default--gap: .9em; */
 
 }
 
@@ -73,10 +76,10 @@ body {
 
 
 .heroBanner_iconPlay {
-    width: 5em;
-    height: 5em;
+    width: 3em;
+    height: 3em;
     display: none;
-    /* Essa configuração define a largura e altura do container com 80px */
+    /* Essa configuração define a largura e altura do container com 3px */
 }
 
 
@@ -112,11 +115,72 @@ body {
 
 }
 
+/* ------------------------------------------------------------------------------------------------------------------- */
+/* CSS */
+
+.littleContent a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+.littleContent {
+    background-color: rgb(213, 215, 216);
+    text-align: center;
+}
+
+
+
+
+.littleContent_title {
+    color: var(--first--color);
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+
+
+.littleContent span[class^="icon-"] {
+    color: var(--first--color);
+    /* Esse seletor  pega o atributo que começa com span com a class icon- e aplica uma cor */
+    font-size: 2.5em;
+
+}
+
+
+.littleContent p{
+   line-height: 1.3em;
+   color: #614d8a;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+/* CSS GRID */
+
+
+.row{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+/* min-width: 0 - col-small
+   min-width: 50em - col-little
+   min-width: 56.25em - col-large
+   min-width: 71.825em - col-xlarge */
+
+
+
+
+
 
 
 /* Media queries */
 
-
+/* LITTLE */
 @media screen and (min-width: 50em) {
 
     /* 50em corresponde a 800px */
@@ -170,7 +234,7 @@ body {
     }
 }
 
-
+/* LARGE */
 @media screen and (min-width: 56.25em) {
 
     /* 56.25em corresponde a 900px */
@@ -200,11 +264,29 @@ body {
 }
 
 
+/* XLARGE */
+@media screen and (min-width: 71.875em) {
 
-@media screen and (min-width: 71.875em){
     /* 71.875em correnponde a 1185px */
-    .heroBanner{
-        background-image: url(../images/bg_topo_1600x1374.jpg);
+    .heroBanner {
+        background-image: linear-gradient(transparent, var(--first--color)), url(../images/bg_topo_1600x1374.jpg);
+        background-blend-mode: luminosity;
+        /* linear-gradient(transparent, var(--first--color)): Cria um gradiente linear que vai de transparente no topo até o valor definido na variável CSS --first--color, e o background-blend-mode: luminosity controla o brilho ou a intensidade da luz. */
+    }
+
+    .heroBanner .maxWidth {
+        width: 50%;
+        /*Essa confiuração diminui em 50% o container maxWidth */
+
 
     }
+
+
+    .heroBanner_iconPlay {
+        width: 5em;
+        height: 5em;
+        /* Essa configuração define a largura e altura do container com 80px */
+    }
+
 }
+

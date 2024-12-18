@@ -2,7 +2,7 @@
 
 
 * {
-    /* margin: 0; */
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -11,66 +11,64 @@
 :root {
     --first--color: #6A5ACD;
     --second--color: #ffff;
-    /* --default--gap: .9em; */
-
 }
 
 
 
-body {
+bod {
     font-family: sans-serif;
-
 }
 
 
-
-.maxWidth {
-    max-width: 70.25em;
-    /* 70.25em corresponde a 1124px */
-
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Federo", serif;
 }
+
 
 
 
 .top_header {
+    max-width: 70.25em;
+    /* Aqui foi aplicado uma largura de 1124px , para poder centralizar o elemento*/
     text-align: center;
-    /* Aqui centralizei todo meu header */
+    margin: auto;
 }
-
 
 
 .top_header_nav {
     background-color: var(--first--color);
-    padding: .5em;
-    /* Aqui apliquei uma cor de fundo na nav, e dei um espaço interno dentro da nav */
 }
+
 
 
 .top_header_nav ul {
     list-style-type: none;
-    /* Aqui tirei os bullet da ul */
 }
+
 
 
 .top_header_nav a {
     text-decoration: none;
     color: var(--second--color);
     display: block;
-    padding: 1em;
+    padding: .9em;
+    /* Aqui foi aplicado um display: block para o padding ser configurado. */
 }
 
 
-.top_header_nav li:hover {
-    background-color: color-mix(in srgb, var(--first--color), var(--second--color) 10%);
 
+.top_header_nav li:hover {
+    background-color: color-mix(in srgb, var(--first--color), #ffff 15%);
 }
 
 
 .heroBanner {
     text-align: center;
-    background-color: rgb(213, 215, 216);
-    padding: 1.5em;
-
+    background-color: #ccc;
+    padding: 1.2em;
 }
 
 
@@ -79,233 +77,180 @@ body {
     width: 3em;
     height: 3em;
     display: none;
-    /* Essa configuração define a largura e altura do container com 3px */
+    /* Aqui foi aplicado uma larguara e uma altura para o container e um display: none para o icon sumir */
 }
 
 
 
 .heroBanner_title {
     color: var(--first--color);
-    font-family: "Playfair Display SC", serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 1.5em;
-    padding: 1em;
+    font-weight: normal;
+
+
 }
 
 
 
 .heroBanner_subtitle {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.1em;
+    padding-top: .5em;
     font-weight: 300;
-    color: #9370DB;
-    line-height: 1.3em;
+    color: color-mix(in srgb, var(--first--color), #ffff 15%);
+    font-size: 1.1em;
 }
+
 
 
 .heroBanner_btn {
     display: inline-block;
-    background-color: rgb(130, 161, 161);
-    padding: .80em 1.5em;
-    text-decoration: none;
+    padding: .75em 1.5em;
+    background-color: rgb(57, 209, 209);
+    margin-top: 1em;
     border-radius: 5px;
-    color: #ffff;
-    margin-top: 1.2em;
-
-}
-
-/* ------------------------------------------------------------------------------------------------------------------- */
-/* CSS */
-
-.littleContent a {
-    color: inherit;
     text-decoration: none;
+    color: var(--second--color);
+    text-transform: capitalize;
 }
 
 
 
 .littleContent {
-    background-color: rgb(213, 215, 216);
     text-align: center;
-    
-}
+    background-color: #ccc;
 
+}
 
 
 
 .littleContent_title {
+    font-size: 1.3em;
     color: var(--first--color);
     text-transform: uppercase;
-    font-weight: normal;
-}
-
-
-
-.littleContent span[class^="icon-"] {
-    color: var(--first--color);
-    /* Esse seletor  pega o atributo que começa com span com a class icon- e aplica uma cor */
-    font-size: 2.5em;
 
 }
 
 
-.littleContent p{
-   line-height: 1.3em;
-   color: #614d8a;
+.littleContent p {
+    color: color-mix(in srgb, var(--first--color), #ffff 15%);
 }
+
+
+.littleContent a {
+    text-decoration: none;
+    color: purple;
+}
+
+
 
 
 /* ------------------------------------------------------------------------------------------------------------------- */
-/* CSS GRID */
-
-
-.row{
-    display: flex;
-    flex-direction: column;
-    
-    
-}
-
-
-
-.col{
-    flex: auto;
-    width: 100%;
-    outline: 2px solid red;
-}
-
-
-.col-small-12{
-    width: 100%;
-}
-
-
-
-/* min-width: 0 - col-small
-   min-width: 50em - col-little
-   min-width: 56.25em - col-large
-   min-width: 71.825em - col-xlarge */
-
-
-
-
-
-
 
 /* Media queries */
 
-/* LITTLE */
+/* LITTLE*/
 @media screen and (min-width: 50em) {
-
     /* 50em corresponde a 800px */
+
     .top_header {
         display: flex;
         justify-content: space-between;
-        margin: auto;
+        margin-top: 1.3em;
+
     }
+
 
     .top_header_nav li {
         display: inline-block;
-        /* Aqui apliquei um display: inline-block para por as li uma ao lado da outra em linha */
-    }
-
-    .top_header_nav a {
-        color: #000000;
-
-    }
-
-    .top_header_nav a:hover {
-        background-color: #ccc6f7;
-        transition: 2s ease-in-out;
-        /* Essa configuração tranition define a transição , 2 segundos define a duração da transição, ease-in-out define aceleração e desaceleração suave. */
-
+        /* Essa configuração coloca os elementos em linha */
     }
 
 
     .top_header_nav {
         background-color: initial;
-        /* Essa configuração reseta ao valor padrão do css que é o background-color: transparent */
+        /* Aqui usei essa configuração para tirar o background-color, voltando para o padrão */
+    }
+
+
+    .top_header_nav a {
+        color: inherit;
+        /* Essa configuração especifica que a cor do texto será herdada do elemento pai */
+    }
+
+
+    .top_header_nav a:hover {
+        background-color: color-mix(in srgb, var(--first--color), #ffff 50%);
+        transition: 2s ease-in-out;
+        /* 1. transition: Define a transição.
+        2. 2s (2 segundos): Duração da transição.
+        3. ease-in-out: Tipo de transição (aceleração e desaceleração suave). */
     }
 
 
     .heroBanner {
         background-color: var(--first--color);
+
     }
+
+
+    .heroBanner_title,
+    .heroBanner_subtitle {
+        color: var(--second--color);
+        font-weight: normal;
+    }
+
 
     .heroBanner_iconPlay {
         display: block;
+        width: 6em;
+        height: 6em;
         margin: auto;
-        /* Essa configuração com o display: block faz com que a imagem icon saia do display: none e volte aparecer. */
-    }
-
-    .heroBanner_title {
-        color: #ddd;
-    }
-
-
-    .heroBanner_subtitle {
-        color: #ddd;
+        padding: 1em;
     }
 }
 
 /* LARGE */
-@media screen and (min-width: 56.25em) {
+@media screen and (min-width: 62.5em) {
+    /* 65.5em corresponde a 1000px */
 
-    /* 56.25em corresponde a 900px */
     .heroBanner {
         background-image: url(../images/bg_topo_1198x670.jpg);
         aspect-ratio: 1198 / 670;
-        /* Essa configuração aspect-ratio faz com que o elemento aumente na mesma proporção */
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .heroBanner {
+        /* Essa configuração define que a que o contaiener aumente na mesma proporção */
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        /* Toda essa configuração foi para centralizar o heroBanner e descer mas como o elemento  */
+        /* Essa configuração alinhou e colocou todo elemento para parte de baixo */
 
     }
+
 
     .heroBanner .maxWidth {
-        width: 70%;
-        /* Essa confiuração diminui em 70% o container maxWidth */
-
+        width: 80%;
     }
-
 
 }
 
 
 /* XLARGE */
-@media screen and (min-width: 71.875em) {
+@media screen and (min-width: 74.6875em) {
+    /* 74.6875em corresponde a 1195px */
 
-    /* 71.875em correnponde a 1185px */
     .heroBanner {
-        background-image: linear-gradient(transparent, var(--first--color)), url(../images/bg_topo_1600x1374.jpg);
+        background-image: url(../images/bg_topo_1600x1374.jpg);
         background-blend-mode: luminosity;
-        /* linear-gradient(transparent, var(--first--color)): Cria um gradiente linear que vai de transparente no topo até o valor definido na variável CSS --first--color, e o background-blend-mode: luminosity controla o brilho ou a intensidade da luz. */
-         
+        background-size: cover;
+        max-height: 90vh;
+        width: 100%;
+        /* Essa configuração define que o maxwidth vai aumentar até 90% da viewport e o width: 100% vai forçar o elemento a chegar a 100% da largura do container */
     }
 
+
     .heroBanner .maxWidth {
-        width: 50%;
-        /*Essa confiuração diminui em 50% o container maxWidth */
-
-
+        width: 60%;
     }
 
 
     .heroBanner_iconPlay {
-        width: 5em;
-        height: 5em;
-        /* Essa configuração define a largura e altura do container com 80px */
+        width: 7em;
+        height: 7em;
     }
-
-
-   
-
 }
-

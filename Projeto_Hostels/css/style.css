@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --first--color: #6959CD;
+    --second--color: #ddd;
+}
+
+
+
+body{
+    font-family: sans-serif;
+}
+
+
+.maxWidth{
+    max-width: 1124px;
+}

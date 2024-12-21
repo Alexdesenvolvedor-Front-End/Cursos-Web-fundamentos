@@ -1,22 +1,57 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 
-:root{
+:root {
     --first--color: #6959CD;
     --second--color: #ddd;
 }
 
 
 
-body{
+body {
     font-family: sans-serif;
 }
 
 
-.maxWidth{
-    max-width: 1124px;
+.maxWidth {
+    max-width: 70.25em;
 }
+
+
+
+.top_header {
+    text-align: center;
+}
+
+
+.top_header_nav {
+    background-color: var(--first--color);
+}
+
+
+
+.top_header_nav ul{
+    list-style: none;
+}
+
+
+
+.top_header_nav a{
+    text-decoration: none;
+    color: var(--second--color);
+    display: block;
+    padding: 1.5em;
+}
+
+
+
+.top_header_nav li:hover{
+    background-color: color-mix(in srgb, var(--first--color), #ffff 10%);
+}
+
+
+

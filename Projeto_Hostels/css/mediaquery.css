@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --first--color: #6959CD;
+    --second--color: #ddd;
+}
+
+/* MEDIA QUERIES */
+
+
+@media screen and (min-width: 50em) {
+    .top_header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+  
+}
+

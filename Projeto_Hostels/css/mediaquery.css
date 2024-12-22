@@ -10,10 +10,12 @@
     --second--color: #ddd;
 }
 
+
+
 /* MEDIA QUERIES */
 
 
-/* 50em corresponde a 800px */
+/* Essa medua queries corresponde a 800px */
 
 @media screen and (min-width: 50em) {
     .top_header {
@@ -47,7 +49,7 @@
 }
 
 
-/* 50em corresponde a 800px */
+/* Essa media queries corresponde a 800px */
 
 
 @media screen and (min-width: 50em) {
@@ -75,12 +77,41 @@
 
     }
 
+
+   
+
 }
 
 
-@media screen and (min-width:) {
+
+/* Essa media queries correnponde a 1000px */
+@media screen and (min-width: 62.5em) {
     .heroBanner {
-        background-color: var(--first--color);
+        background-image: url(../images/bg_topo_1198x670.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        aspect-ratio: 1198 / 670;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+
+    .heroBanner .maxWidth {
+        width: 100%;
     }
 }
 
+
+/* Essa media queries correnponde a 1180px */
+@media screen and (min-width: 73.75em) {
+    .heroBanner {
+        background-image: linear-gradient(transparent, var(--first--color)), url(../images/bg_topo_1600x1374.jpg);
+        max-height: 80vh;
+        width: 100%;
+        /* Função dessa configuração Define a altura máxima do elemento .heroBanner como 80% da altura da janela de visualização (viewport). Isso faz com que o elemento ocupe até 80% da altura da tela, mas não mais do que isso, mesmo que a altura do conteúdo interno seja maior.
+        width: 100%;:
+        Define a largura do .heroBanner para ocupar 100% da largura da tela (ou do seu contêiner pai). */
+        background-blend-mode: multiply;
+    }
+}

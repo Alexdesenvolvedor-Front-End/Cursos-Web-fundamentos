@@ -26,7 +26,7 @@ h4 {
 
 .maxWidth {
     max-width: 70.25em;
-    margin: auto;
+
 
 }
 
@@ -34,13 +34,14 @@ h4 {
 
 .top_header {
     text-align: center;
+    margin: auto;
 
 }
 
 
 .top_header_nav {
     background-color: var(--first--color);
-   
+
 
 }
 
@@ -72,7 +73,7 @@ h4 {
     background-color: var(--second--color);
     text-align: center;
     padding: 1.5em;
-    
+
 }
 
 
@@ -118,3 +119,51 @@ h4 {
     color: #ffff;
     border-radius: 5px;
 }
+
+
+
+.mediaContent{
+    text-align: center;
+    padding: 1.5em;
+    background-color: var(--second--color);
+}
+
+
+.mediaContent a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.mediaContent_title{
+    color: var(--first--color);
+    font-size: 1.3em;
+    text-transform: uppercase;
+    padding-top: .9em;
+
+}
+
+
+.mediaContent span[class^=icon-]{
+    color: #9932CC;
+    font-size: 3em;
+}
+
+
+.mediaContent p{
+    padding: 1em;
+    line-height: 1.3em;
+    
+   
+}
+
+
+
+.mediaContent{
+    display: flex;
+    flex-wrap: wrap;
+  
+ }
+
+
+

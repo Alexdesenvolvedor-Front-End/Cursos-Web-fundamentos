@@ -15,7 +15,7 @@
 /* MEDIA QUERIES */
 
 
-/* Essa medua queries corresponde a 800px */
+/* Essa medIa queries corresponde a 800px */
 
 @media screen and (min-width: 50em) {
     .top_header {
@@ -45,6 +45,10 @@
     .top_header_nav a:hover {
         background-color: color-mix(in srgb, var(--first--color), #ddd 70%);
 
+    }
+
+    .media800px{
+        width: calc(50% - .5em);
     }
 }
 
@@ -77,10 +81,10 @@
 
     }
 
-
-   
-
+ 
 }
+
+
 
 
 
@@ -114,4 +118,11 @@
         Define a largura do .heroBanner para ocupar 100% da largura da tela (ou do seu contêiner pai). */
         background-blend-mode: multiply;
     }
+
+    .large1180px{
+        width: calc(25% - .);
+    }
 }
+
+
+

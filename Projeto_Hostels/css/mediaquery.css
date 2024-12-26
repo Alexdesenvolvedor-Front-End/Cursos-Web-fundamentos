@@ -47,9 +47,20 @@
 
     }
 
-    .media800px{
-        width: calc(50% - .5em);
+  
+    .row{
+        display: grid;
+        grid-template-rows: 100px 100px 100px 100px;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        
+
     }
+
+
+  
+  
+     
+  
 }
 
 
@@ -81,7 +92,7 @@
 
     }
 
- 
+
 }
 
 
@@ -119,10 +130,6 @@
         background-blend-mode: multiply;
     }
 
-    .large1180px{
-        width: calc(25% - .);
-    }
+
+
 }
-
-
-

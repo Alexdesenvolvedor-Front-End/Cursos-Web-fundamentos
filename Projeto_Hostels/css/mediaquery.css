@@ -8,14 +8,17 @@
 :root {
     --first--color: #6959CD;
     --second--color: #ddd;
+
+
 }
 
 
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES VS Gride*/
 
 
-/* Essa medIa queries corresponde a 800px */
+/* Essa media queries corresponde a 800px */
+/*col-12*/
 
 @media screen and (min-width: 50em) {
     .top_header {
@@ -47,26 +50,17 @@
 
     }
 
-  
-    .row{
-        display: grid;
-        grid-template-rows: 100px 100px 100px 100px;
-        grid-template-columns: 2fr 2fr 2fr 2fr;
-        
 
+    .col-sm {
+        width: 50%;
     }
 
-
-  
-  
-     
-  
 }
 
 
 /* Essa media queries corresponde a 800px */
 
-
+/* col-12 */
 @media screen and (min-width: 50em) {
     .heroBanner {
         background-color: var(--first--color);
@@ -92,7 +86,6 @@
 
     }
 
-
 }
 
 
@@ -100,25 +93,27 @@
 
 
 /* Essa media queries correnponde a 1000px */
-@media screen and (min-width: 62.5em) {
+/* col-md4 */
+@media screen and (min-width: 65.5em) {
     .heroBanner {
         background-image: url(../images/bg_topo_1198x670.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         aspect-ratio: 1198 / 670;
+        /* Essa configuração é para manter a proporção da imagem */
         display: flex;
         justify-content: center;
         align-items: flex-end;
     }
 
-
-    .heroBanner .maxWidth {
-        width: 100%;
+    .col-md4 {
+        width: 25%;
     }
 }
 
 
 /* Essa media queries correnponde a 1180px */
+/* col-md6 */
 @media screen and (min-width: 73.75em) {
     .heroBanner {
         background-image: linear-gradient(transparent, var(--first--color)), url(../images/bg_topo_1600x1374.jpg);
@@ -129,7 +124,4 @@
         Define a largura do .heroBanner para ocupar 100% da largura da tela (ou do seu contêiner pai). */
         background-blend-mode: multiply;
     }
-
-
-
 }

@@ -12,11 +12,12 @@
 
 
 
-html {
+body {
     font-family: sans-serif;
 
-}
 
+
+}
 
 
 
@@ -27,17 +28,14 @@ h4 {
     font-family: "Ubuntu Sans Mono", serif;
 }
 
-.maxWidth {
-    max-width: 70.25em;
 
-
-}
 
 
 
 .top_header {
     text-align: center;
     margin: auto;
+    /* Aqui centralizei todo meu top_header */
 
 }
 
@@ -83,6 +81,7 @@ h4 {
 
 .heroBanner_iconPlay img {
     width: 100%;
+    /* Aqui apliquei um width: 100% para imagem se encaixar dentro do container */
 }
 
 
@@ -94,7 +93,7 @@ h4 {
 
 
 .heroBanner_title {
-    font-size: 1.5;
+    font-size: 1.6em;
     color: var(--first--color);
     font-weight: 700;
     padding-bottom: .4em;
@@ -129,7 +128,10 @@ h4 {
     text-align: center;
     padding: 1.5em;
     background-color: var(--second--color);
-    height: 100vh;
+
+
+
+
 }
 
 
@@ -151,6 +153,7 @@ h4 {
 .mediaContent span[class^=icon-] {
     color: #9932CC;
     font-size: 3em;
+    /* Aqui pega o seletor span que tem a class icon- e aplicar as configurações */
 }
 
 
@@ -160,4 +163,54 @@ h4 {
     text-align: justify;
 
 
+
 }
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    /* Aqui apliquei um flex-wrap: wrap para meu elemento quebrar linha */
+
+
+}
+
+
+.col {
+    flex: 1 auto;
+    width: 100%;
+}
+
+
+
+.mainContent{
+    padding: 1.5em;
+}
+
+
+.mainContent .row{
+    gap: 2em;
+}
+
+
+.mainContent_title{
+    text-transform: uppercase;
+    color: var(--first--color);
+    font-weight: normal;
+    padding: .6em;
+    font-size: 1.4em;
+}
+
+
+
+.mainContent p{
+    padding: 1em;
+    line-height: 1.4em;
+    letter-spacing: .1em;
+}
+
+
+
+
+
